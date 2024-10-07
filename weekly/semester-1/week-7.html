@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Creative Process Journal, 24-25.</title>
+
+  <!-- Meta information, for machines to read, SEO -->
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="Author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+  <!-- Load StyleSheets -->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- header and footer section, the menu. -->
+  <header>
+    <nav class="main__nav-bar">
+      <ul class="main__nav-title">
+        <li><a href="/">The Internet is a Space for Divination</a></li>
+        <li class="mobile__hide"><a href="/about">Ang Jun Liang</a></li>
+      </ul>
+      <ul class="main__nav-list">
+        <li class="main__nav-item"><a href="/">overview</a></li>
+        <li class="main__nav-item"><a href="/repository">repository</a></li>
+        <li class="main__nav-item"><a href="/about">about</a></li>
+        <li class="main__nav-about">
+          <p>
+            A design communication graduation project.
+          </p>
+        </li>
+      </ul>
+      <div class="main__nav-ham">
+        <span class="main__nav-ham-bar"></span>
+        <span class="main__nav-ham-bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main section, all your content goes here. -->
+  <main>
+
+    <article>
+      <section>
+        <div class="color__bg-1 color__fg-2">
+          <div class="width__l margin__auto padding__top-xl">
+            <div class="row type__content center__type">
+              <h2>Week 7</h2>
+              <p>Machine Learning, Noise Divination</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="column">
+          <img src="/assets/images/week-7/noisegeneration-14-crop.png" class="img__cover-75">
+        </div>
+      </section>
+
+
+
+      <section>
+        <div class="color__bg-1 color__fg-2">
+          <div class="width__l margin__auto margin__top-xl">
+            <div class="row type__content">
+              <div class="column">
+                <h1>Image-based Machine Learning</h1>
+                <p>
+                  Having understood the value of the image as a signifier from last week's exercise, I wanted to know
+                  how
+                  this can be interpreted by machine learning. I chanced upon ml5.js, which makes machine learning
+                  accessible for beginners.
+
+                  <br><br>To understand how it works, I set out to create a simple system that detects if I was happy,
+                  sad or shocked.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="width__l margin__auto padding__y-m">
+            <div class="row margin__auto type__content">
+              <div class="column">
+                <h2>Round 1 — Not Confident</h2>
+                <p>
+                  Not super accurate.
+                  Got 2 out of 3 right(ish).
+                </p>
+              </div>
+              <div class="row">
+                <ul>
+                  <li>
+                    <figure>
+                      <img src="/assets/images/week-7/noisegeneration-15.jpg" class="zoom" />
+                    </figure>
+                  </li>
+                </ul>
+                <ul>
+
+                  <li><img src="/assets/images/week-7/noisegeneration-16.jpg" class="zoom" /></li>
+                  <li><img src="/assets/images/week-7/noisegeneration-17.jpg" class="zoom" /></li>
+                </ul>
+              </div>
+              <div class="column">
+                <p>
+                  I thought that it might have been because the samples weren't the same amount. So for the next one, I
+                  tried a consistent sample size (50) for each class.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="width__l margin__auto padding__y-s">
+            <div class="row margin__auto type__content">
+              <div class="column">
+                <h2>Round 2 — 80-95% Confident</h2>
+                <p>
+                  Better, but still not super confident about it.
+                  <br><br>
+                  I then realised that it was only getting the answer right when my face was at certain positions on the
+                  screen. I figured it was because all my samples taken was of me in the same position. So, I decided to
+                  add more samples of the expression but in different positions.
+                </p>
+              </div>
+              <div class="row">
+                <ul>
+                  <li>
+                    <figure>
+                      <img src="/assets/images/week-7/noisegeneration-6.jpg" class="zoom" />
+                    </figure>
+                  </li>
+                </ul>
+                <ul>
+
+                  <li><img src="/assets/images/week-7/noisegeneration-7.jpg" class="zoom" /></li>
+                  <li><img src="/assets/images/week-7/noisegeneration-8.jpg" class="zoom" /></li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="width__l margin__auto padding__y-s">
+            <div class="row margin__auto type__content">
+              <div class="column">
+                <h2>Round 3 – 100% Confident</h2>
+                <p>
+                  After I added more samples of my face in different positions, the machine was able to much more
+                  accurate predict the right facial expressions.
+                </p>
+              </div>
+              <div class="row">
+                <ul>
+                  <li>
+                    <figure>
+                      <img src="/assets/images/week-7/noisegeneration-2.jpg" class="zoom" />
+                    </figure>
+                  </li>
+                </ul>
+                <ul>
+                  <li><img src="/assets/images/week-7/noisegeneration-3.jpg" class="zoom" /></li>
+                  <li><img src="/assets/images/week-7/noisegeneration-4.jpg" class="zoom" /></li>
+                </ul>
+              </div>
+
+
+
+              <div class="column">
+                <p>
+                  As I was taking samples of my face in different positions, I realised that this was how my iPhone
+                  set up my Face ID as well. This blew my mind, because understanding machine learning has always been
+                  so
+                  impossible for me, but as soon as I did this, it made so much sense. Finding Teachable Machine made
+                  the process so much more approachable and easy to understand. It was a good step towards
+                  understanding better how machine learning works, and what I could do with it in the future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="margin__top-xl padding__top-xl color__bg-2 color__fg-1 ">
+          <div class="width__l margin__auto padding__y-l">
+            <div class="row type__content">
+              <div class="column">
+                <h1>Noise Divination / Pixel Oracle</h1>
+                <p><i>Now that I understood machine learning a little better, I wanted to try to create a simple system
+                    of divination with it. This is achieved in a few steps.</i>
+                  <br><br><br>
+                  <a href="#chance"> 1. Inventing Chance within Code (Object)</a><br><br>
+                  <a href="#words"> 2. Words from the Magic 8-Ball (Semantics)</a><br><br>
+                  <a href="#machine">3. Divination through Machine Learning (Code)</a><br><br>
+                </p>
+              </div>
+            </div>
+            <hr>
+          </div>
+
+
+
+          <div class="width__l margin__auto padding__y-l">
+            <div class="row type__content">
+              <div class="column">
+                <h2 id="chance">1. Inventing Chance with Code (Object)</h2>
+                <p>
+                  For this experiment, I set myself the goal of creating a <b>simple system of divination with bare
+                    imagery, as little external significance as possible.</b> I wanted to experiment with how to
+                  create a
+                  skeleton for a divination system in the context of code.
+                  <br><br>
+                  I started with experiment different generations of abstract imagery using p5.js. I ultimately
+                  decided
+                  to go with just a 1000x1000px canvas (below), each assigned to a binary outcome, black or white. I
+                  felt like
+                  this embodied the true binary decision-making process of the computer.
+
+                </p>
+                <p><i>
+                    (Out of curiousity, I wanted to know what the possibility of generating 2 of the same image was, so
+                    I
+                    asked
+                    ChatGPT to do it for me. It is...*drum roll*... 1 divided by 2/1,000,000, which ChatGPT tells me is
+                    a
+                    number with over 300,000 digits! I'm not good with math but I think that means basically 0.)
+                  </i>
+                </p>
+              </div>
+
+              <div class="column">
+                <ul>
+                  <li><img src="/assets/images/week-7/noisegeneration-25.jpg" class="zoom" /></li>
+                  <li><img src="/assets/images/week-7/noisegeneration-28.jpg" class="zoom" /></li>
+                  <li><img src="/assets/images/week-7/noisegeneration-13.jpeg" class="zoom" /></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="color__bg-1 color__fg-2">
+              <div class="width__s margin__auto padding__y-l type__content">
+                <p>I liken this 1000x1000px canvas of noise to the stars before people learnt how to read the skies.
+                  <b>Patterns inperceivable to the human eye, but legible to a more-than-human being</b>, or at least it
+                  was at
+                  first.
+                </p>
+              </div>
+
+              <div class="width__l margin__auto padding__bottom-l">
+                <div class="row type__content">
+                  <div class="column">
+                    <img src="/assets/images/week-7/noisegeneration-14.png" class="zoom" />
+                    <figcaption>
+                      <p><b>1000x1000 Binary Decisions</b> </p>
+                    </figcaption>
+                  </div>
+                  <div class="column">
+                    <figure>
+                      <img src="/assets/images/week-7/noisegeneration-31.jpg" class="zoom" />
+                      <figcaption>
+                        <p><b>Supernatural meaning to be read</b> </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row type__content margin__auto margin__top-l padding__y-l">
+              <div class="column">
+                <p>So I generated 30 of those images to feed into the machine learning system (abitrary number), 10
+                  for
+                  each outcome.</p>
+              </div>
+              <div class="column">
+                <img src="/assets/images/week-7/noisegeneration-9.jpg" class="zoom" />
+              </div>
+            </div>
+            <hr>
+
+
+
+
+            <div class="width__l margin__auto padding__y-l ">
+              <div class="row type__content padding__top-l">
+                <div class="column">
+                  <h2 id="words">2. Words from the Magic 8-Ball (Semantics)</h2>
+                  <p>
+                    I then had to decide what to name each of the outcomes – some combination of Yes, Maybe/Try Again
+                    and No — but abstract. I scratched my head for a while, and referred to the list of divination
+                    objects that I had created for myself. I realised that I had to look for the one that was <u>catered
+                      to the widest audience, because the semantics of the outcome would be catered the most
+                      ambiguously. </u>
+                    <br><br>
+
+                    So, I turned the epitome of commercial divination — <b>the Magic 8-Ball</b>. I looked up the list of
+                    responses that they gave, and selected 3 that tickled my fancy.
+                  </p>
+                </div>
+                <div class="row">
+                  <img src="/assets/images/week-7/noisegeneration-30.jpg">
+                </div>
+                <div class="row type__content">
+                  <div class="column">
+                    <p>Let me explain why I thought these were funny.
+                      <br><br>
+                      Yes: "<u>Signs</u> point to yes." <br>
+                      – What signs are they referring to? The magic 8-ball god? The CEO of Mattel?<br><br>
+                      Maybe: "<u>Concentrate</u> and ask again." <br>
+                      – Concentrate on what exactly?<br><br>
+                      No: "My <u>sources</u> say no." <br>
+                      – Again, what sources?
+                    </p>
+                  </div>
+                  <div class="column">
+                    <p> All 3 of these suggest a "source" for divination, yet keeps it ambiguous enough that it doesn't
+                      answer the question. This employs the <b>Barnum Effect</b>, which Geoffrey Cornelius describes:
+                      "The
+                      diviner offers statements of an almost universal applicability that seem specific yet will be
+                      agreed
+                      upon by everyone; or, offers a general statement geared to the particular client’s situation, yet
+                      with no obvious falsifiable detail. The client fills in specific details, crediting the diviner
+                      with
+                      having a marvellous insight into their situation." <br><br>That is my hope for the Pixel Oracle (a
+                      name I
+                      just came up with), that the client assess their subconscious and fills in the gap regardless of
+                      how
+                      their question is answered.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="width__l margin__auto padding__y-l ">
+              <div class="row type__content padding__top-l">
+                <h2 id="machine">3. Divination through Machine Learning (Code)</h2>
+                <p>
+                  Now that I have my Pixel Oracle designed, I decided to put it to the test. Before that, I had to
+                  decide how to put an image in. I thought that, because the machine learned on black and white images,
+                  I should stick to a black and white image. So, I created what essentially was an image filter than
+                  converts the image into a 1000x1000px canvas of pixels.
+                </p>
+              </div>
+              <div class="color__bg-1 color__fg-2">
+                <div class="width__l margin__auto padding__y-l">
+                  <div class="row type__content">
+                    <p>I assumed the role of an ancient farmer who came across this magical oracle, and <b>wants to know
+                        if he would have a bountiful harvest in the spring.</b> So, he inputs a picture that he took
+                      last spring with a magical camera he also chanced upon. </p>
+                  </div>
+                  <div class="row type__content">
+                    <div class="column">
+                      <img src="/assets/images/week-7/noisegeneration-20.jpg" class="zoom" />
+                      <figcaption>
+                        <p><b>Original Image</b> </p>
+                      </figcaption>
+                    </div>
+                    <div class="column">
+                      <img src="/assets/images/week-7/noisegeneration-11.png" class="zoom" />
+                      <figcaption>
+                        <p><b>Converted into 1000x1000px Image</b></p>
+                      </figcaption>
+                    </div>
+                    <div class="row">
+                      <p> <i>(I realise that this logic has its loopholes. i.e. the black pixels are generated based on
+                          a
+                          threshold of brightness, so presenting the same image darker, or brighter could affect the
+                          outcome. BUT, that would also be a result of how the camera decided to capture the image,
+                          which
+                          would function as a second generator of chance. UNLESS, the client manipulates the image
+                          themselves, which would function as a chicane, a human intervention. <br><br>BUT the image
+                          would
+                          still be
+                          subjected to the Pixel Oracle, that has been trained on an extremely random arrangements of
+                          pixels.) </i></p>
+                    </div>
+                    <div class="column">
+                      <img src="/assets/images/week-7/noisegeneration-10.jpg">
+                      <figcaption>
+                        <p><b>The Pixel Oracle is sure of a bountiful harvest</b></p>
+                      </figcaption>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img src="/assets/images/week-7/happy-farmer.jpeg">
+                      </div>
+                      <div class="column">
+                        <p> It tells him, with 99% certainty, that "Signs point to yes". Regardless of his understanding
+                          the
+                          machine, he is very affirmed and grateful that he was blessed with food for the coming
+                          year.<br><br>He
+                          brings the Pixel Oracle to all his fellow farm friends and spreads the divine word of this new
+                          technology. It tells the people what their assigned fate is from birth. It tells people how to
+                          become wealthy. It becomes an all-knowing entity that people turn to in times of strife. It
+                          becomes the basis in which all of life is run... for a while. Then someone stumbles upon an
+                          all-knowing deck of cards...
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row type__content padding__top-l">
+
+                <div class="column">
+                  <p> I started with this experiment because it was an exercise for me to create a "new mode of
+                    divination" that did not involve any cultural significance. It provided me with a skeleton from
+                    which I can build new modes of divinations with, or to understand how to analyse existing modes of
+                    divination. Through this, I was able to understand better the roles that the <b>object, input
+                      (image/text), code, and output (image/text),</b> plays in a divination system.
+                    <br><br>
+                    It also evolved into a little design fiction exercise in which I crafted a narrative around my
+                    artefact (the Pixel Oracle), a tool which I intend to employ in communicating future artefacts.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+    </article>
+  </main>
+
+  <!-- footer, page ends here.-->
+  <footer>
+    <div class="prev__next">
+      <ul>
+        <li><a href="../../index.html" id="go-prev">prev</a></li>
+        <li><a href="../../index.html">overview</a></li>
+        <li><a href="./week-1.html" id="go-next">next</a></li>
+      </ul>
+    </div>
+    <div class="scroll__top"><a href="javascript:scrollToTop();">↑</a></div>
+  </footer>
+
+  <div id="lightbox"></div>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>
