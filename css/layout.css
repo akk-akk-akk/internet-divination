@@ -404,6 +404,11 @@ p:not(:last-child) {
 
 
 @media (orientation: portrait) {
+
+  .p__size-xl {
+    font-size: var(--font-size-l);
+  }
+
   .p__size-l {
     font-size: var(--font-size-m);
   }
