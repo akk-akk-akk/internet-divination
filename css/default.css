@@ -35,13 +35,15 @@
   --color-9: darkgreen;
   --color-10: dodgerblue;
   --color-11: blue;
+  --color-12: rgb(201, 116, 201);
+  --color-13: stroke black 5px;
 
   --color-fg: #111111;
   --color-bg: #ffffff;
   --color-header-bg: #ffffff;
   --color-header-fg: black;
   --color-title: orange;
-  --color-link:var(--color-5);
+  --color-link:var(--color-12);
   --color-link-hover: var(--color-6);
   --color-nav-link: var(--color-11);
   --color-nav-link-hover: var(--color-3);
@@ -364,6 +366,23 @@
 .color__bg-10 {
   background: var(--color-10) !important;
 }
+.color__bg-11 {
+  background: var(--color-11) !important;
+}
+.color__bg-12 {
+  background: var(--color-12) !important;
+}
+
+.color__bg-stroke {
+  background: var(--color-1) !important;
+  border: 2px solid var(--color-0);
+}
+
+.color__bg-dashed {
+  background: var(--color-1) !important;
+  border: 1px dashed var(--color-0);
+}
+
 
 .color__fg-0 {
   color: var(--color-0) !important;
