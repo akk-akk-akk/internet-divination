@@ -253,12 +253,17 @@ footer {
   gap: 0;
 }
 
+
 .column,
 .row > ul > li {
   display: flex;
   flex-direction: column;
   flex: 1;
 
+}
+
+.column h1 {
+  gap: var(--spacing-m); /* Add this if you want to control the gap size in column layouts */
 }
 
 .column__half {
@@ -300,7 +305,7 @@ h1 {
 h2 {
   font-size: var(--font-size-l);
   font-weight: 500;
-  margin-bottom: var(--spacing-m);
+  margin-bottom: var(--spacing-s);
   -webkit-text-stroke-width: 0.5px;
 }
 
@@ -418,6 +423,8 @@ p:not(:last-child) {
   }
   
 }
+
+
 
 /* **********************************************************
  * special features           

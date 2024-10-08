@@ -47,7 +47,7 @@
   --color-link-hover: var(--color-6);
   --color-nav-link: var(--color-11);
   --color-nav-link-hover: var(--color-3);
-
+  
   --header__height: 3rem;
 }
 
@@ -55,7 +55,7 @@
  * Custom margin and padding sizes
  * ********************************************************** */
 
-.margin__auto {
+ .margin__auto {
   margin: auto;
 }
 
@@ -366,23 +366,6 @@
 .color__bg-10 {
   background: var(--color-10) !important;
 }
-.color__bg-11 {
-  background: var(--color-11) !important;
-}
-.color__bg-12 {
-  background: var(--color-12) !important;
-}
-
-.color__bg-stroke {
-  background: var(--color-1) !important;
-  border: 2px solid var(--color-0);
-}
-
-.color__bg-dashed {
-  background: var(--color-1) !important;
-  border: 1px dashed var(--color-0);
-}
-
 
 .color__fg-0 {
   color: var(--color-0) !important;
@@ -426,6 +409,23 @@
 
 .color__fg-10 {
   color: var(--color-10) !important;
+}
+
+.color__bg-11 {
+  background: var(--color-11) !important;
+}
+.color__bg-12 {
+  background: var(--color-12) !important;
+}
+
+.color__bg-stroke {
+  background: var(--color-1) !important;
+  border: 2px solid var(--color-0);
+}
+
+.color__bg-dashed {
+  background: var(--color-1) !important;
+  border: 1px dashed var(--color-0);
 }
 
 .font__size-xs {
