@@ -107,6 +107,7 @@ header {
     display: block;
     font-size: 1rem;
     padding-top: 0rem;
+    
   }
 
   .main__nav-list {
@@ -115,6 +116,7 @@ header {
     margin: 0;
     margin-top: -1vh;
     padding-top: 20vh;
+    padding-bottom: 20vh;
     position: fixed;
     background: #ffffff;
     transition: 0.3s;
