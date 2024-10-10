@@ -48,392 +48,251 @@
     <article>
       <section>
         <div class="color__bg-1 color__fg-2">
-          <div class="width__l margin__auto padding__top-xl">
+          <div class="width__l margin__auto padding__top-m">
+
             <div class="row type__content center__type">
               <h2>Week 8</h2>
               <p>Techgnosis, RPO Development</p>
             </div>
           </div>
         </div>
+        <hr>
       </section>
 
       <section>
-        <div class="column">
-          <img src="/assets/images/week-7/noisegeneration-14-crop.png" class="img__cover-75">
-        </div>
-      </section>
-
-
-
-      <section>
-        <div class="color__bg-1 color__fg-2">
-          <div class="width__l margin__auto margin__top-xl">
-            <div class="row type__content">
-              <div class="column">
-                <h1>Image-based Machine Learning</h1>
-                <p>
-                  Having understood the value of the image as a signifier from last week's exercise, I wanted to know
-                  how
-                  this can be interpreted by machine learning. I chanced upon ml5.js, which makes machine learning
-                  accessible for beginners.
-
-                  <br><br>To understand how it works, I set out to create a simple system that detects if I was happy,
-                  sad or shocked.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="width__l margin__auto padding__y-m">
-            <div class="row margin__auto type__content">
-              <div class="column">
-                <h2>Round 1 — Not Confident</h2>
-                <p>
-                  Not super accurate.
-                  Got 2 out of 3 right(ish).
-                </p>
-              </div>
-              <div class="row">
-                <ul>
-                  <li>
-                    <figure>
-                      <img src="/assets/images/week-7/noisegeneration-15.jpg" class="zoom" />
-                    </figure>
-                  </li>
-                </ul>
-                <ul>
-
-                  <li><img src="/assets/images/week-7/noisegeneration-16.jpg" class="zoom" /></li>
-                  <li><img src="/assets/images/week-7/noisegeneration-17.jpg" class="zoom" /></li>
-                </ul>
-              </div>
-              <div class="column">
-                <p>
-                  I thought that it might have been because the samples weren't the same amount. So for the next one, I
-                  tried a consistent sample size (50) for each class.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="width__l margin__auto padding__y-s">
-            <div class="row margin__auto type__content">
-              <div class="column">
-                <h2>Round 2 — 80-95% Confident</h2>
-                <p>
-                  Better, but still not super confident about it.
-                  <br><br>
-                  I then realised that it was only getting the answer right when my face was at certain positions on the
-                  screen. I figured it was because all my samples taken was of me in the same position. So, I decided to
-                  add more samples of the expression but in different positions.
-                </p>
-              </div>
-              <div class="row">
-                <ul>
-                  <li>
-                    <figure>
-                      <img src="/assets/images/week-7/noisegeneration-6.jpg" class="zoom" />
-                    </figure>
-                  </li>
-                </ul>
-                <ul>
-
-                  <li><img src="/assets/images/week-7/noisegeneration-7.jpg" class="zoom" /></li>
-                  <li><img src="/assets/images/week-7/noisegeneration-8.jpg" class="zoom" /></li>
-                </ul>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="width__l margin__auto padding__y-s">
-            <div class="row margin__auto type__content">
-              <div class="column">
-                <h2>Round 3 – 100% Confident</h2>
-                <p>
-                  After I added more samples of my face in different positions, the machine was able to much more
-                  accurate predict the right facial expressions.
-                </p>
-              </div>
-              <div class="row">
-                <ul>
-                  <li>
-                    <figure>
-                      <img src="/assets/images/week-7/noisegeneration-2.jpg" class="zoom" />
-                    </figure>
-                  </li>
-                </ul>
-                <ul>
-                  <li><img src="/assets/images/week-7/noisegeneration-3.jpg" class="zoom" /></li>
-                  <li><img src="/assets/images/week-7/noisegeneration-4.jpg" class="zoom" /></li>
-                </ul>
-              </div>
-
-
-
-              <div class="column">
-                <p>
-                  As I was taking samples of my face in different positions, I realised that this was how my iPhone
-                  set up my Face ID as well. This blew my mind, because understanding machine learning has always been
-                  so
-                  impossible for me, but as soon as I did this, it made so much sense. Finding Teachable Machine made
-                  the process so much more approachable and easy to understand. It was a good step towards
-                  understanding better how machine learning works, and what I could do with it in the future.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section>
-        <div class="margin__top-xl padding__top-xl color__bg-2 color__fg-1 ">
-          <div class="width__l margin__auto padding__y-l">
-            <div class="row type__content">
-              <div class="column">
-                <h1>Noise Divination / Pixel Oracle</h1>
-                <p><i>Now that I understood machine learning a little better, I wanted to try to create a simple system
-                    of divination with it. This is achieved in a few steps.</i>
-                  <br><br><br>
-                  <a href="#chance"> 1. Inventing Chance within Code (Object)</a><br><br>
-                  <a href="#words"> 2. Words from the Magic 8-Ball (Semantics)</a><br><br>
-                  <a href="#machine">3. Divination through Machine Learning (Code)</a><br><br>
-                </p>
-              </div>
-            </div>
-            <hr>
-          </div>
-
-
-
-          <div class="width__l margin__auto padding__y-l">
-            <div class="row type__content">
-              <div class="column">
-                <h2 id="chance">1. Inventing Chance with Code (Object)</h2>
-                <p>
-                  For this experiment, I set myself the goal of creating a <b>simple system of divination with bare
-                    imagery, as little external significance as possible.</b> I wanted to experiment with how to
-                  create a
-                  skeleton for a divination system in the context of code.
-                  <br><br>
-                  I started with experiment different generations of abstract imagery using p5.js. I ultimately
-                  decided
-                  to go with just a 1000x1000px canvas (below), each assigned to a binary outcome, black or white. I
-                  felt like
-                  this embodied the true binary decision-making process of the computer.
-
-                </p>
-                <p><i>
-                    (Out of curiousity, I wanted to know what the possibility of generating 2 of the same image was, so
-                    I
-                    asked
-                    ChatGPT to do it for me. It is...*drum roll*... 1 divided by 2/1,000,000, which ChatGPT tells me is
-                    a
-                    number with over 300,000 digits! I'm not good with math but I think that means basically 0.)
-                  </i>
-                </p>
-              </div>
-
-              <div class="column">
-                <ul>
-                  <li><img src="/assets/images/week-7/noisegeneration-25.jpg" class="zoom" /></li>
-                  <li><img src="/assets/images/week-7/noisegeneration-28.jpg" class="zoom" /></li>
-                  <li><img src="/assets/images/week-7/noisegeneration-13.jpeg" class="zoom" /></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="color__bg-1 color__fg-2">
-              <div class="width__s margin__auto padding__y-l type__content">
-                <p>I liken this 1000x1000px canvas of noise to the stars before people learnt how to read the skies.
-                  <b>Patterns inperceivable to the human eye, but legible to a more-than-human being</b>, or at least it
-                  was at
-                  first.
-                </p>
-              </div>
-
-              <div class="width__l margin__auto padding__bottom-l">
-                <div class="row type__content">
-                  <div class="column">
-                    <img src="/assets/images/week-7/noisegeneration-14.png" class="zoom" />
-                    <figcaption>
-                      <p><b>1000x1000 Binary Decisions</b> </p>
-                    </figcaption>
-                  </div>
-                  <div class="column">
-                    <figure>
-                      <img src="/assets/images/week-7/noisegeneration-31.jpg" class="zoom" />
-                      <figcaption>
-                        <p><b>Supernatural meaning to be read</b> </p>
-                      </figcaption>
-                    </figure>
-                  </div>
+        <div class="width__m margin__auto padding__y-l">
+          <div class="row padding__top-l type__content">
+            <div class="column">
+              <h1>Techgnosis, Myth, Magic, and Mysticism in the Age of Information</h1>
+              <div class="row padding__top-l">
+                <div class="column">
+                  <img src="/assets/images/week-8/techgnosis-1.jpg">
+                  <figcaption>
+                    <p>Erik Davis' "Techgnosis"</p>
+                  </figcaption><br>
+                </div>
+                <div class="column">
+                  <p>This is an old book from 1998, but in my opinion, it contains information that is more relevant than ever. Gnosis simply describes knowledge of spiritual mysteries. Davis traces the history of technological innovations—from the telegraph to the internet—and shows how each has been infused with mystical hopes, spiritual aspirations, and utopian dreams.<br><br>
+                    <img class="img__stroke" src="/assets/images/week-8/techgnosis-2.jpg"><br><br>
+                  When analysing technoculture, it is then pertinent to consider how spirituality forms part of the new cultures that are created through innovation. With the rise of AI, technology has never been wielded more potential to be an "all-knowing" entity. I am then reminded of <a href="/weekly/semester-1/week-5.html#neoliberalism" target="__blank">Ramey's study of neoliberalism</a> and how the perspective of divination has created new potential for solving problems.
+                  </p>
                 </div>
               </div>
-            </div>
-
-            <div class="row type__content margin__auto margin__top-l padding__y-l">
-              <div class="column">
-                <p>So I generated 30 of those images to feed into the machine learning system (abitrary number), 10
-                  for
-                  each outcome.</p>
-              </div>
-              <div class="column">
-                <img src="/assets/images/week-7/noisegeneration-9.jpg" class="zoom" />
+              <div class="row padding__top-l">
+                <p>In today's post-internet society, constant interaction with the internet (some say addiction) has created so many more opportunities for meaning-making that inform the self, our beliefs, values, behaviours, almost constructing our entire worldview – the things we buy, the way we present ourselves, the issues we fight for. Countless articles have been written about this phenomena from a secular POV, but I haven't come across one that speaks to this matter from the POV of divination. <b>Perhaps the reason we keep going back to consuming content on the internet is because of the same reason – that we view this seemingly 'random' arrival of information as the only way we can construct our own worldview, that we need a more-than-human influence to provide guidance. The root of this then goes back to the "the perennial human problem of how to relate to chance as meaningful... what gives the [internet] part of its continuing, if ever-more diffuse and obscure appeal." as Ramey puts it.</b></p>
               </div>
             </div>
-            <hr>
+          </div>
+          <hr>
+          <div class="row padding__y-l type__content">
+            <div class="row padding__top-l">
 
+              <div class="column">
+                <h2>Hermeneutic Reverse Engineering = Chicane?</h2>
+                <p>She then expands on Geertz's method with her introduction of hermeneutic reverse engineering.
+                  <br><br>
 
+                  <i>Working backwards
+                    from the construction of a functioning technology, a designer gains
+                    useful information for the creation of a novel technological instance. In the
+                    application of hermeneutic reverse engineering, what is reverse-engineered
+                    are the elements that contribute to the meaning of a given technocultural
+                    formation.</i>
+                  <br><br>
+                  I started drawing parallels with her methodology with those of divination practices. To perform a
+                  chicane, the diviner must possess a deep understanding of the signs and symbols to be "manipulated",
+                  considering the understanding of the client. They then "reverse-engineer" the process of divination so
+                  that they are able to deliver a certain message to the client. <b>With this methodology, I then wonder
+                    if I could perform a chicane on divination practices that occur through technology, devices and the
+                    internet?</b>
+                </p>
+              </div>
+              <div class="column">
+                <img src="/assets/images/week-6/technoculture-3.jpg">
+              </div>
 
-
-            <div class="width__l margin__auto padding__y-l ">
-              <div class="row type__content padding__top-l">
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <div class="width__m margin__auto padding__y-l">
+          <div class="row padding__y-l type__content">
+            <div class="column">
+              <h1>Critical Journal</h1>
+              <div class="row">
                 <div class="column">
-                  <h2 id="words">2. Words from the Magic 8-Ball (Semantics)</h2>
-                  <p>
-                    I then had to decide what to name each of the outcomes – some combination of Yes, Maybe/Try Again
-                    and No — but abstract. I scratched my head for a while, and referred to the list of divination
-                    objects that I had created for myself. I realised that I had to look for the one that was <u>catered
-                      to the widest audience, because the semantics of the outcome would be catered the most
-                      ambiguously. </u>
-                    <br><br>
-
-                    So, I turned the epitome of commercial divination — <b>the Magic 8-Ball</b>. I looked up the list of
-                    responses that they gave, and selected 3 that tickled my fancy.
+                  <p>I then reflected on Gideon's sharing in week 2 to understand how my project will be conducted under
+                    the critical journal framework.<br><br>
+                    <i>A critical journal is developed
+                      around one’s own practice with
+                      external examples being discussed
+                      where relevant at each stage of the
+                      exploration. In an iterative fashion,
+                      ideas (thinking) and production
+                      (making) are connected through
+                      the acquisition and application of
+                      knowledge.</i>
                   </p>
                 </div>
                 <div class="row">
-                  <img src="/assets/images/week-7/noisegeneration-30.jpg">
+                  <img class="img__stroke" src="/assets/images/week-6/Method.jpg">
                 </div>
-                <div class="row type__content">
-                  <div class="column">
-                    <p>Let me explain why I thought these were funny.
-                      <br><br>
-                      Yes: "<u>Signs</u> point to yes." <br>
-                      – What signs are they referring to? The magic 8-ball god? The CEO of Mattel?<br><br>
-                      Maybe: "<u>Concentrate</u> and ask again." <br>
-                      – Concentrate on what exactly?<br><br>
-                      No: "My <u>sources</u> say no." <br>
-                      – Again, what sources?
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p> All 3 of these suggest a "source" for divination, yet keeps it ambiguous enough that it doesn't
-                      answer the question. This employs the <b>Barnum Effect</b>, which Geoffrey Cornelius describes:
-                      "The
-                      diviner offers statements of an almost universal applicability that seem specific yet will be
-                      agreed
-                      upon by everyone; or, offers a general statement geared to the particular client’s situation, yet
-                      with no obvious falsifiable detail. The client fills in specific details, crediting the diviner
-                      with
-                      having a marvellous insight into their situation." <br><br>That is my hope for the Pixel Oracle (a
-                      name I
-                      just came up with), that the client assess their subconscious and fills in the gap regardless of
-                      how
-                      their question is answered.
-                    </p>
+                <div class="row">
+                  <p>The hermeneutic reverse engineering methodology offers ways of acquiring knowledge about elements
+                    of signification in a site or object of divination, which is crucial for a practice that is largely
+                    informed by the signs and metaphors. This process of acquisition will occur through first-person
+                    observations (interactions with devices/the internet) supplemented by secondary resources (existing
+                    literature). This will provide the foundation of the making process (rearticulation), starting the
+                    self-informing process of prototyping, assessment, iteration, and reflection. This making process
+                    will be informed further by the philosophies of speculative design, in which the designing process
+                    considers how an artefact embodies and communicates psychological, sociological, or ideological
+                    ideas. (Tharp and Tharp 74). The findings from these iterative processes of making and reflection
+                    will then be documented in the critical journal, in addition to relevant contextualisation against
+                    theories and ideas from my reading list.
 
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="width__l margin__auto padding__y-l ">
-              <div class="row type__content padding__top-l">
-                <h2 id="machine">3. Divination through Machine Learning (Code)</h2>
-                <p>
-                  Now that I have my Pixel Oracle designed, I decided to put it to the test. Before that, I had to
-                  decide how to put an image in. I thought that, because the machine learned on black and white images,
-                  I should stick to a black and white image. So, I created what essentially was an image filter than
-                  converts the image into a 1000x1000px canvas of pixels.
-                </p>
-              </div>
-              <div class="color__bg-1 color__fg-2">
-                <div class="width__l margin__auto padding__y-l">
-                  <div class="row type__content">
-                    <p>I assumed the role of an ancient farmer who came across this magical oracle, and <b>wants to know
-                        if he would have a bountiful harvest in the spring.</b> So, he inputs a picture that he took
-                      last spring with a magical camera he also chanced upon. </p>
-                  </div>
-                  <div class="row type__content">
-                    <div class="column">
-                      <img src="/assets/images/week-7/noisegeneration-20.jpg" class="zoom" />
-                      <figcaption>
-                        <p><b>Original Image</b> </p>
-                      </figcaption>
-                    </div>
-                    <div class="column">
-                      <img src="/assets/images/week-7/noisegeneration-11.png" class="zoom" />
-                      <figcaption>
-                        <p><b>Converted into 1000x1000px Image</b></p>
-                      </figcaption>
-                    </div>
-                    <div class="row">
-                      <p> <i>(I realise that this logic has its loopholes. i.e. the black pixels are generated based on
-                          a
-                          threshold of brightness, so presenting the same image darker, or brighter could affect the
-                          outcome. BUT, that would also be a result of how the camera decided to capture the image,
-                          which
-                          would function as a second generator of chance. UNLESS, the client manipulates the image
-                          themselves, which would function as a chicane, a human intervention. <br><br>BUT the image
-                          would
-                          still be
-                          subjected to the Pixel Oracle, that has been trained on an extremely random arrangements of
-                          pixels.) </i></p>
-                    </div>
-                    <div class="column">
-                      <img src="/assets/images/week-7/noisegeneration-10.jpg">
-                      <figcaption>
-                        <p><b>The Pixel Oracle is sure of a bountiful harvest</b></p>
-                      </figcaption>
-                    </div>
-                    <div class="row">
-                      <div class="column">
-                        <img src="/assets/images/week-7/happy-farmer.jpeg">
-                      </div>
-                      <div class="column">
-                        <p> It tells him, with 99% certainty, that "Signs point to yes". Regardless of his understanding
-                          the
-                          machine, he is very affirmed and grateful that he was blessed with food for the coming
-                          year.<br><br>He
-                          brings the Pixel Oracle to all his fellow farm friends and spreads the divine word of this new
-                          technology. It tells the people what their assigned fate is from birth. It tells people how to
-                          become wealthy. It becomes an all-knowing entity that people turn to in times of strife. It
-                          becomes the basis in which all of life is run... for a while. Then someone stumbles upon an
-                          all-knowing deck of cards...
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row type__content padding__top-l">
-
-                <div class="column">
-                  <p> I started with this experiment because it was an exercise for me to create a "new mode of
-                    divination" that did not involve any cultural significance. It provided me with a skeleton from
-                    which I can build new modes of divinations with, or to understand how to analyse existing modes of
-                    divination. Through this, I was able to understand better the roles that the <b>object, input
-                      (image/text), code, and output (image/text),</b> plays in a divination system.
-                    <br><br>
-                    It also evolved into a little design fiction exercise in which I crafted a narrative around my
-                    artefact (the Pixel Oracle), a tool which I intend to employ in communicating future artefacts.
                   </p>
-
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-
       </section>
 
+      <section class="color__bg-2 color__fg-1">
+        <div class="width__m margin__auto padding__y-l">
+          <div class="row padding__y-l type__content">
+            <div class="column">
+              <h2>An Experiment with Hermeneutic Analysis</h2>
+              <h1>Moon Blocks Simulator</h1>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="/assets/images/week-6/jiaobei-0.jpg"><br><br>
+                <p>I was a little lost with how to create a first experiment, so I started with something simple that my
+                  family has employed in places of prayer. Jiaobei, or moon blocks, are divination tools originating
+                  from China. The mechanics are simple, each block producing only 2 outcomes (up or down). When placed
+                  together, they make possible 4 outcomes.
+                </p>
+              </div>
+              <div class="column">
+                <p>Shèngjiǎo (聖筊, divine answer): One block flat and another block round is a 'yes' answer.
+                  <br><br>
+                  Nùjiǎo (怒筊, angry answer) also kūjiao (哭筊, crying answer) or méijiǎo (沒筊, no answer): Both blocks flat
+                  facing floor is a 'no' answer. It is said that the gods are displeased or show disagreement with the
+                  question, and this is shown in the way the blocks directly fall flat on the floor.
+                  <br><br>
+                  Xiàojiǎo (笑筊, laughing answer): Both blocks round facing floor have several interpretations; in any
+                  case it is said the gods are laughing at the question depending on what has been asked. It can be
+                  interpreted as an emphasized 'no' answer, the question that was asked was unclear, or that the answer
+                  to the question is obvious. One characteristic of this answer is when the blocks sway back and forth
+                  when dropped, a symbolic show of laughter.
+                  <br><br>
+                  Lìjiǎo (立筊, standing answer): One or both blocks falling but standing erect on the floor (so that the
+                  block is standing up on the two pointed ends) indicates that the deities do not understand the
+                  referent's question, therefore the question is nullified and the procedure must be repeated.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="width__m margin__auto padding__y-l">
+            <div class="row type__content">
+              <div class="column">
+                <h2>Round 1 – Jiaobei/Moon Blocks</h2>
+                <p>My first task was to translate this practise through code in
+                  p5js.I found an image generation template that selected images from the library at random, and
+                  displayed them in random positions across the screen. I then replaced the images with a block
+                  facing up, and another facing down.</p>
+              </div>
+              <div class="row">
+                <ul>
+                  <li><img src="/assets/images/week-6/jiaobei-1.png">
 
+                  </li>
+                  <li><img src="/assets/images/week-6/jiaobei-2.png">
 
+                  </li>
+                  <li><img src="/assets/images/week-6/jiaobei-3.png">
+
+                  </li>
+
+                </ul>
+              </div>
+              <div class="row padding__top-s">
+                <p>I noted that the random positioning of the images were an important signifier in the displayed
+                  output. If the images were just generated at the same position every time, they would appear less
+                  "real" or "random", as if they were actually thrown on the ground.
+                  <br><br>
+                  As Anne Balsamo wrote, it is important to observe the "arrangement among signifying elements
+                  whereby a unity is produced." In which case, the signifiers here are:
+                  <br><br>
+                  1. The object (blocks)<br><br>
+                  2. The random placement<br><br>
+                  3. Text
+                  <br><br>—<br><br>
+                  The next step in her framework is Interpretation and Articulation, where we draw the lines between
+                  signifying elements and context.
+                  <br><br>
+                  1. The object (blocks) – a form and colour already associated with a belief<br><br>
+                  2. The random placement – simulates the physicality of throwing the blocks<br><br>
+                  3. Text – describes the divine interpretation according to how it would be traditionally read
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="width__m margin__auto padding__y-l">
+            <div class="row type__content">
+              <div class="column">
+                <h2>Round 2 – Coins</h2>
+                <p>I then thought about the way my family practises this using coins. A different object is used, but
+                  because of the individual and the setting that it is used in, it bears the same significance, albeit
+                  altered for convenience. </p>
+              </div>
+              <div class="row">
+                <ul>
+                  <li><img src="/assets/images/week-6/coins-1.png">
+
+                  </li>
+                  <li><img src="/assets/images/week-6/coins-2.png">
+
+                  </li>
+                  <li><img src="/assets/images/week-6/coins-3.png">
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          
+          <div class="color__bg-1 color__fg-2 type__content">
+            <div class="width__s margin__auto padding__y-l">
+              <div class="row type__content">
+                <div class="column">
+                  <h2>Binary System of Chance</h2><br><br>
+                  <img class="img__bw" src="/assets/images/week-6/binary-1.jpg"><br><br>
+                  <p>If I were to present the blocks as a black and white square, it would achieve the same outcome, but
+                    it
+                    would not bear the visual signifiers present that gives the divination its significance (specific to
+                    the
+                    individual). If I push this further, I would argue that this mechanism mirrors the way a computer
+                    makes
+                    decisions through a binary system – one we understand as 1s and 0s. If the binary system is truly
+                    left
+                    to chance, or instructed so, the computer then becomes an object where divination occurs infinitely.
+                  
+                  <br><br>
+                  This task has allowed me to further understand that there really are endless possibilities of chance that are practised through technology, it is just the re-articulation of signifiers and contexts around the mechanism that allows it to bear meaning. Understanding this will allow me to then re-articulate, or reimagine a possible iteration of this practise.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </article>
   </main>
