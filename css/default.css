@@ -43,8 +43,8 @@
   --color-header-bg: #ffffff;
   --color-header-fg: black;
   --color-title: orange;
-  --color-link:var(--color-12);
-  --color-link-hover: var(--color-6);
+  --color-link:var(--color-4);
+  --color-link-hover: var(--color-10);
   --color-nav-link: var(--color-11);
   --color-nav-link-hover: var(--color-3);
   
