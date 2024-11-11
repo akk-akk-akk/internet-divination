@@ -253,6 +253,10 @@ footer {
   gap: 0;
 }
 
+.row__video {
+  gap: 1%;
+}
+
 
 .column,
 .row > ul > li {

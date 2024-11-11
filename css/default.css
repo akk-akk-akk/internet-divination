@@ -435,7 +435,7 @@
 }
 
 .color__bg-dashed {
-  background: var(--color-1) !important;
+  background: rgb(241, 241, 241);;
   border: 1px dashed var(--color-0);
 }
 
