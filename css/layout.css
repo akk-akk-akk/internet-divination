@@ -356,10 +356,10 @@ p b {
   -webkit-text-stroke-width: 0.75px;
 }
 
-p a {
-  /* text-decoration:underline; */
-  /* text-underline-offset: 3px; */
-}
+/* p a {
+  text-decoration:underline;
+  text-underline-offset: 3px;
+} */
 
 a {
   color: var(--color-link);
