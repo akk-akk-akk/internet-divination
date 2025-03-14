@@ -346,6 +346,7 @@ ul {
 
 p {
   font-size: var(--font-size-m);
+  -webkit-text-stroke-width: 0.1px;
 }
 
 p i {
