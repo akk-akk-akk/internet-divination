@@ -15,12 +15,13 @@
 
  
  @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Syne+Mono&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 html {
-    font-family: 'Syne Mono', sans-serif;
-    
+    font-family: 'Roboto Mono', sans-serif;
 }
+
 
 
 /* **********************************************************
@@ -34,8 +35,9 @@ html {
  * ********************************************************** */
 
 * {
-    line-height: 140%;
+    line-height: 130%;
     font-weight: 400;
+    letter-spacing: -0.25px;
     /* text-shadow:0.5px 0.5px 5px, 0.5px 0.5px 5px; */
 
     

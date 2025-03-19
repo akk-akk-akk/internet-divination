@@ -143,3 +143,19 @@ document.addEventListener("keydown", function(e) {
       t.classList.toggle("collapsed")
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hoverImage = document.getElementById('hover-image');
+  const listItems = document.querySelectorAll('.weekly ul li a');
+
+  listItems.forEach(item => {
+    item.addEventListener('mouseover', function() {
+      const imageSrc = this.getAttribute('data-image');
+      hoverImage.setAttribute('src', imageSrc);
+    });
+
+    item.addEventListener('mouseout', function() {
+      hoverImage.setAttribute('src', '/assets/images/week-23/wizard-2.jpg'); // Default image
+    });
+  });
+});
