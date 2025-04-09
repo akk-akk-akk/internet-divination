@@ -19,6 +19,10 @@ header {
   padding: var(--spacing-s) var(--spacing-l);
   display: flex;
   justify-content: space-between;
+/* border-radius: 100vw;
+  background: linear-gradient(rgb(255, 255, 255),var(--color-11));  */
+
+    /* box-shadow: 0 0 15px 5px var(--color-11); Outer glow effect */
 }
 
 .main__nav-bar ul {

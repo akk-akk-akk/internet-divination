@@ -217,7 +217,12 @@ figcaption p b {
 }
 
 .img__stroke {
-  border: 2px solid #dadada;
+  border: 1px solid var(--color-2);
+}
+
+.img__stroke2 {
+  border-top: 1px solid var(--color-2);
+  border-bottom: 1px solid var(--color-2);
 }
 
 /* 3. footer */
@@ -522,12 +527,17 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 100vh;
+  /* border: 1px solid var(--color-2); */
+  /* border-radius: 100vh; */
   background: #ffffff;
+  /* background: var(--color-11) */
+  
   /* background: linear-gradient(rgb(255, 0, 0, 0.5), rgb(255, 255, 255,0),rgb(255, 0, 0, 0.5)); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgb(255, 255, 255,0), rgb(255, 0, 0), rgb(255, 255, 255,0));
+  background: linear-gradient(rgb(255, 255, 255,0), var(--color-4), rgb(255, 255, 255,0));
+  /* background: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 255,0),rgb(255, 0, 0)); */
+  /* border-radius: 100vh; */
 }
