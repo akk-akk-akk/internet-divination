@@ -159,3 +159,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const nodes = document.querySelectorAll('.graph-node img');
+
+  // Example: Add a click event to each node
+  nodes.forEach((node) => {
+    node.addEventListener('click', () => {
+      alert(`You clicked on ${node.alt}`);
+    });
+  });
+});

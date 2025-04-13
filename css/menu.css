@@ -16,13 +16,12 @@ header {
 .main__nav-bar {
   width: 100%;
   z-index: 100;
-  padding: var(--spacing-s) var(--spacing-l);
+  padding: var(--spacing-xs) var(--spacing-xs);
   display: flex;
   justify-content: space-between;
 /* border-radius: 100vw;
   background: linear-gradient(rgb(255, 255, 255),var(--color-11));  */
-
-    /* box-shadow: 0 0 15px 5px var(--color-11); Outer glow effect */
+/* box-shadow: 0 0 5px 1px var(--color-11); */
 }
 
 .main__nav-bar ul {

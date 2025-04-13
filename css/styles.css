@@ -12,14 +12,21 @@
  * lots of font options at fonts.google.com for example.
  * ********************************************************** */
 
+ @import url(https://db.onlinewebfonts.com/c/4c4a87973ef80fc72049e01b9085fadc?family=ABC+Diatype);
 
+ @import url(https://db.onlinewebfonts.com/c/fbee28f49e99c472f1f569c6ddc24ebe?family=ABC+Diatype+Mono); 
  
- @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Syne+Mono&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sawarabi+Gothic&family=Syne+Tactile&family=Syne:wght@400..800&display=swap'); */
+
+ @font-face {
+    font-family: "myfont";
+    src: url("../assets/font/wkgothic_abc-webfont.woff") format('woff');
+    /* font-weight: bold; */
+  }
 
 
 html {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'myfont', sans-serif;
 }
 
 
@@ -36,8 +43,8 @@ html {
 
 * {
     line-height: 130%;
-    font-weight: 400;
-    letter-spacing: -0.25px;
+    font-weight: 200;
+    letter-spacing: -0.5px;
     /* text-shadow:0.5px 0.5px 5px, 0.5px 0.5px 5px; */
 
     
@@ -45,7 +52,7 @@ html {
 
 body {
     background-color: var(--color-bg);
-    color: var(--color-fg);
+    color: var(--color-11);
 }
 
 @media (orientation: portrait) {
