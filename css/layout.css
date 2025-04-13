@@ -541,3 +541,9 @@ li {
   /* background: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 255,0),rgb(255, 0, 0)); */
   /* border-radius: 100vh; */
 }
+
+.pdf-viewer {
+  width: 100%;
+  border: 1px solid #ccc; /* Optional: Add a border */
+  margin: 1rem 0; /* Optional: Add spacing */
+}
