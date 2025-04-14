@@ -57,6 +57,6 @@ body {
 
 @media (orientation: portrait) {
     * {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
