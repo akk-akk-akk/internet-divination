@@ -465,7 +465,11 @@ p:not(:last-child) {
   .p__size-m {
     font-size: var(--font-size-s);
   }
-  
+
+
+  h2 {
+    text-decoration: underline;
+  }
 }
 
 

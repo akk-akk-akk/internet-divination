@@ -51,16 +51,7 @@
   --header__height: 2.2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  :root {
-  --header__height: 2.7rem;
-}
-}
-@media only screen and (max-width: 410px) {
-  :root {
-  --header__height: 4rem;
-}
-}
+
 
 /* **********************************************************
  * Custom margin and padding sizes
@@ -329,6 +320,17 @@
 .width__xs {
   max-width: 32rem;
 }
+
+@media (orientation: portrait) {
+
+  .padding__x-xl {
+    padding-left: var(--spacing-m);
+    padding-right: var(--spacing-m);
+  }
+
+}
+
+
 
 /* **********************************************************
  * Custom colors
