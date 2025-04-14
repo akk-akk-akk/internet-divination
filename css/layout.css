@@ -70,17 +70,17 @@ main {
   margin-bottom: var(--spacing-l);
 }
 
-/* .weekly h2 {
-  font-weight: inherit;
+.weekly h2 {
+  font-weight: 600;
   text-decoration: none;
-}  */
+} 
 
 .weekly ul li {
-  /* border-bottom: 1px solid var(--color-0); */
+  border-bottom: 2px solid var(--color-0);
 }
 
 .weekly ul li:first-child {
-  /* border-top: 1px solid var(--color-0); */
+  border-top: 2px solid var(--color-0);
 }
 
 .weekly ul li a {
@@ -109,7 +109,7 @@ main {
 }
 
 .repo__list ul {
-  border-top: solid var(--color-2) 1px;
+  border-top: solid var(--color-2) 2px;
   padding-top: var(--spacing-s);
   padding-bottom: var(--spacing-m);
 }
@@ -122,6 +122,7 @@ main {
 
 .repo__item ul li img {
   max-height: 12rem;
+  width: auto;
 }
 
 .repo__item ul li p {

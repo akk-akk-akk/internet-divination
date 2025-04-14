@@ -4,7 +4,7 @@
       "title":"Book 1",
       "author":"Some Author",
       "reference":"Smith, John A. The Art of Fiction Writing. PublisherX, 2023.",
-      "thumbnail":"../assets/images/repo/divination.jpeg",
+      "thumbnail":"divination.jpeg",
       "description":"In this fictional example, Smith is the author's last name, John A. is the author's first name and middle initial, 'The Art of Fiction Writing' is the title of the book, 'PublisherX' is the name of the publisher, and '2023' is the publication year.",
       "link":"https://lasallesodc.show"
     },
