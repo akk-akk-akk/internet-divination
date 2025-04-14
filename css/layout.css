@@ -72,7 +72,8 @@ main {
 
 /* .weekly h2 {
   font-weight: inherit;
-} */
+  text-decoration: none;
+}  */
 
 .weekly ul li {
   /* border-bottom: 1px solid var(--color-0); */
@@ -87,10 +88,13 @@ main {
   transition: padding-left 0.5s;
   display: block;
   color: var(--color-0);
+  transition: 0.2s;
 }
 
 .weekly ul li a:hover {
   padding-left: var(--spacing-s);
+  color: var(--color-4);
+  /* box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7);   */
 }
 
 
@@ -331,7 +335,7 @@ h2 {
   font-size: var(--font-size-m);
   font-weight: 500;
   margin-bottom: var(--spacing-s);
-  text-decoration: underline;
+  text-decoration: underline 2px;
   /* -webkit-text-stroke-width: 0.8px; */
   text-transform: uppercase;
 }
@@ -545,7 +549,10 @@ li {
 }
 
 
-/* Gradient Scroll Bar */
+/* **********************************************************
+ * Gradient Scroll Bar
+ * ********************************************************** */
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -569,6 +576,11 @@ li {
   /* border-radius: 100vh; */
 }
 
+/* **********************************************************
+ * PDF Viewer
+ * ********************************************************** */
+
+
 .pdf-viewer {
   width: 100%;
   border: 1px solid #ccc; /* Optional: Add a border */
@@ -576,7 +588,11 @@ li {
 }
 
 
-/* Grid container */
+/* **********************************************************
+ * Grid Containers
+ * ********************************************************** */
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -604,13 +620,47 @@ li {
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
 .grid-item:hover {
   /* transform: scale(1.05); Slightly enlarge the container */
   /* box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.7); Red glow effect */
 }
 
 .grid-item:hover img {
-  /* transform: scale(1.1); Slightly zoom in the image */
+  transform: scale(1.1);
 }
+
+
+/* **********************************************************
+ * Wizard Gif (Corner)
+ * ********************************************************** */
+
+.fixed-gif {
+  position: fixed; /* Keeps the GIF in the same position regardless of scrolling */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 5px; /* Distance from the left of the viewport */
+  z-index: 1000; /* Ensures it appears above other elements */
+  scale: 200%;
+}
+
+.fixed-gif img {
+  width: 40px; /* Adjust the size of the GIF */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); Optional: Add a shadow for better visibility */
+}
+
+
+/* **********************************************************
+ * Hover Image
+ * ********************************************************** */
+
+.hover-image {
+  position: absolute;
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  display: none; /* Hidden by default */
+  pointer-events: none; /* Prevent the image from interfering with mouse events */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
 

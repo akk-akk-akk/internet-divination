@@ -144,22 +144,6 @@ document.addEventListener("keydown", function(e) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const hoverImage = document.getElementById('hover-image');
-  const listItems = document.querySelectorAll('.weekly ul li a');
-
-  listItems.forEach(item => {
-    item.addEventListener('mouseover', function() {
-      const imageSrc = this.getAttribute('data-image');
-      hoverImage.setAttribute('src', imageSrc);
-    });
-
-    item.addEventListener('mouseout', function() {
-      hoverImage.setAttribute('src', '/assets/images/week-23/wizard-2.jpg'); // Default image
-    });
-  });
-});
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const nodes = document.querySelectorAll('.graph-node img');
@@ -168,6 +152,36 @@ document.addEventListener('DOMContentLoaded', () => {
   nodes.forEach((node) => {
     node.addEventListener('click', () => {
       alert(`You clicked on ${node.alt}`);
+    });
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Create an image element for the hover effect
+  const hoverImage = document.createElement('img');
+  hoverImage.classList.add('hover-image');
+  document.body.appendChild(hoverImage);
+
+  // Add event listeners to all links with the data-image attribute
+  const links = document.querySelectorAll('a[data-image]');
+  links.forEach(link => {
+    // Show the image on mouseover
+    link.addEventListener('mouseover', (e) => {
+      const imageSrc = link.getAttribute('data-image');
+      hoverImage.src = imageSrc;
+      hoverImage.style.display = 'block';
+    });
+
+    // Hide the image on mouseout
+    link.addEventListener('mouseout', () => {
+      hoverImage.style.display = 'none';
+    });
+
+    // Move the image with the cursor
+    link.addEventListener('mousemove', (e) => {
+      hoverImage.style.left = `${e.pageX + 15}px`; // Offset slightly to the right of the cursor
+      hoverImage.style.top = `${e.pageY + 15}px`; // Offset slightly below the cursor
     });
   });
 });

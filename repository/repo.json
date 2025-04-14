@@ -1,10 +1,10 @@
 {
   "books": [
     {
-      "title":"Some Title",
+      "title":"Book 1",
       "author":"Some Author",
       "reference":"Smith, John A. The Art of Fiction Writing. PublisherX, 2023.",
-      "thumbnail":"book.jpg",
+      "thumbnail":"../assets/images/repo/divination.jpeg",
       "description":"In this fictional example, Smith is the author's last name, John A. is the author's first name and middle initial, 'The Art of Fiction Writing' is the title of the book, 'PublisherX' is the name of the publisher, and '2023' is the publication year.",
       "link":"https://lasallesodc.show"
     },
@@ -18,11 +18,12 @@
   ],
   "articles": [
     {
-      "title":"Some article title",
-      "author":"Some Author 2",
+      "title":"The Return of the Oracle as AI-Black Box",
+      "author":"Robert Simonowski",
       "reference":"Reference, MLA 2",
       "thumbnail":"article.jpg",
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!",
+      "link":"https://conditiohumana.io/oracle-ai-black-box/"
     }
   ],
   "casestudies": [

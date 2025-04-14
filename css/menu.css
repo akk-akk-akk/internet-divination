@@ -19,9 +19,10 @@ header {
   padding: var(--spacing-xs) var(--spacing-xs);
   display: flex;
   justify-content: space-between;
+  text-decoration: underline 2px;
 /* border-radius: 100vw;
   background: linear-gradient(rgb(255, 255, 255),var(--color-11));  */
-/* box-shadow: 0 0 5px 1px var(--color-11); */
+border-bottom: 2px solid var(--color-11);
 }
 
 .main__nav-bar ul {
