@@ -108,8 +108,13 @@ main {
   margin-bottom: var(--spacing-s);
 }
 
+/* Add spacing-xl between all repo sections except the first one */
+.repo:not(:first-of-type) {
+  margin-top: var(--spacing-xxl);
+}
+
 .repo__list ul {
-  border-top: solid var(--color-2) 2px;
+  border-top: solid var(--color-11) 2px;
   padding-top: var(--spacing-s);
   padding-bottom: var(--spacing-m);
 }
@@ -120,9 +125,17 @@ main {
   width: 100%;
 }
 
+.repo__item ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
 .repo__item ul li img {
   max-height: 12rem;
   width: auto;
+  object-fit: unset;
+  object-position: unset;
+  height: auto;
 }
 
 .repo__item ul li p {
@@ -130,19 +143,22 @@ main {
 }
 
 .repo__item ul li:nth-child(1) {
-  padding-right: var(--spacing-s);
+  padding-right: var(--spacing-m);
   width: 25%;
 }
 
 .repo__item ul li:nth-child(2) {
-  padding-right: var(--spacing-s);
-  font-style: italic;
+  padding-right: var(--spacing-l);
   width: 30%;
 }
 
 .repo__item ul li:nth-child(3) {
   width: 45%;
 }
+
+
+
+
 
 @media (orientation: portrait) {
   .repo__item ul {
@@ -214,22 +230,33 @@ figcaption p b {
   height: 100%;
 }
 
+.vid__stroke {
+  border: 1px solid var(--color-0);
+  display:block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
 
 /*
  * image filters
  * https://www.w3schools.com/cssref/css3_pr_filter.php
  */
+
+
+
  .img__bw {
   filter: grayscale(100%);
 }
 
 .img__stroke {
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--color-0);
+  border-radius: 5px;
 }
 
 .img__stroke2 {
-  border-top: 1px solid var(--color-2);
-  border-bottom: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-0);
+  border-bottom: 1px solid var(--color-0);
 }
 
 .img__circle {
@@ -238,7 +265,11 @@ figcaption p b {
 
 .img__circle2 {
   border-radius: 50%;
-  border: 1px solid var(--color-2);
+  border: 1px solid var(--color-0);
+}
+
+.img__dash {
+  border: 2px dashed var(--color-0);
 }
 
 /* 3. footer */
@@ -268,6 +299,11 @@ footer {
 .row img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
+}
+
+.row video {
+  border-radius: 5px;
 }
 
 .row__no-gap {
@@ -277,6 +313,34 @@ footer {
 .row__video {
   gap: 1%;
 }
+
+.row.small-gap.type__content {
+  gap: var(--spacing-xs);
+}
+
+
+.catalogue-page .row {
+  gap: var(--spacing-xl); /* Adjust the gap size as needed */
+}
+
+.catalogue-page p {
+font-family: 'ABC Diatype Mono', monospace;
+  font-size: var(--font-size-s);
+  font-weight: 600;
+}
+
+.catalogue-page figcaption p {
+  font-size: var(--font-size-xs) !important; /* Force the smaller size */
+}
+
+
+@media (orientation: portrait) {
+  .catalogue-page .row {
+    gap: var(--spacing-l); /* Adjust the gap size as needed */
+  }
+}
+
+
 
 
 .column,
@@ -396,6 +460,8 @@ p b {
   -webkit-text-stroke-width: 0.75px;
 }
 
+
+
 /* p a {
   text-decoration:underline;
   text-underline-offset: 3px;
@@ -492,7 +558,7 @@ p:not(:last-child) {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
 
   display: flex;
   align-items: center;
@@ -510,9 +576,11 @@ p:not(:last-child) {
 }
 
 #lightbox img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  max-width: 75vw; /* 75% of the viewport width */
+  max-height: 75vh; /* 75% of the viewport height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  box-shadow: 0 0px 20px rgba(255, 0, 0); /* Optional: Add a shadow */
+  margin: 0 auto;
 }
 
 .zoom {
@@ -643,7 +711,7 @@ li {
   position: fixed; /* Keeps the GIF in the same position regardless of scrolling */
   bottom: 20px; /* Distance from the bottom of the viewport */
   left: 5px; /* Distance from the left of the viewport */
-  z-index: 1000; /* Ensures it appears above other elements */
+  z-index: 2000; /* Ensures it appears above other elements */
   scale: 200%;
 }
 
@@ -666,6 +734,49 @@ li {
   display: none; /* Hidden by default */
   pointer-events: none; /* Prevent the image from interfering with mouse events */
   z-index: 1000; /* Ensure it appears above other elements */
+}
+
+
+/* **********************************************************
+ * Floating Footer (Catalogue)
+ * ********************************************************** */
+
+
+.floating-footer {
+  position: fixed;
+  bottom: 0;
+  left: 10;
+  width: 100%;
+  background-color: var(--color-bg);
+  /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); */
+  /* border-top: 2px solid var(--color-11); */
+  z-index: 1000;
+}
+
+.floating-footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--spacing-s);
+  margin: 0;
+  list-style: none;
+}
+
+.floating-footer nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.floating-footer nav ul li a {
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  color: var(--color-11);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.floating-footer nav ul li a.active {
+  color: red;
+  text-shadow: 0 0 10px red;
 }
 
 

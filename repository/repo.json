@@ -1,47 +1,196 @@
 {
   "books": [
     {
-      "title":"Book 1",
-      "author":"Some Author",
-      "reference":"Smith, John A. The Art of Fiction Writing. PublisherX, 2023.",
-      "thumbnail":"divination.jpeg",
-      "description":"In this fictional example, Smith is the author's last name, John A. is the author's first name and middle initial, 'The Art of Fiction Writing' is the title of the book, 'PublisherX' is the name of the publisher, and '2023' is the publication year.",
-      "link":"https://lasallesodc.show"
+      "title": "Divination: Perspectives for a New Millenium",
+      "author": "Patrick Curry",
+      "reference": "Curry, Patrick, editor. Divination: Perspectives for a New Millenium. Ashgate, 2010.",
+      "thumbnail": "divination.jpeg",
+      "description":"Investigates divination in a wide variety of cultures, through the lens of different studies by experts in their field. Provides a good analysis into the hermeneutic processes of a ritual.",
+"link": "https://www.amazon.com/Divination-Perspectives-Millennium-Patrick-Curry/dp/1409405559"
     },
     {
-      "title":"Some Title 2",
-      "author":"Some Author 2",
-      "reference":"Reference, MLA 2",
-      "thumbnail":"book.jpg",
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+      "title": "Techgnosis — Myth, Magic & Mysticism in the Age of Information",
+      "author": "Erik Davis",
+      "reference": "Davis, Erik. TechGnosis: Myth, Magic & Mysticism in the Age of Information. 1998.",
+      "thumbnail": "techgnosis.jpeg",
+      "description": "Seminal writing discussing the intersec tion of technology, mysticism, and spirituality, revealing the hidden metaphysical aspects of digital culture.",
+      "link": "https://techgnosis.com/"
+    },
+    {
+      "title": "The Stars Down to Earth",
+      "author": "Theodor W. Adorno",
+      "reference": "Adorno, Theodor W. The Stars Down to Earth: And Other Essays on the Irrational in Culture. Edited by Stephen Crook, 1st ed., Routledge, 2001.",
+      "thumbnail": "stars.jpg",
+      "description": "Adorno's content analysis of an astrology column written during a return visit to the United States from Germany in 1952–53. The book is a critique of the irrationality of astrology and its relationship to the culture industry.",
+      "link": "https://dashlavallee.medium.com/adornos-stars-down-to-earth-an-analysis-of-astrology-c0973af31da7"
+    },
+    {
+      "title": "Sacred Stacks: The Art of Cyborg Community ",
+      "author": "Media Enterprise Design Lab and the Center for Media, Religion, and Culture",
+      "reference": "Argast, Andi, et al. Sacred Stacks: The Art of Cyborg Community. 2023",
+      "thumbnail": "sacredstacks.jpg",
+      "description": "An illustrated 80-page zine exploring ritual, relationship, poetics, and tools for decentralized community-building.<br><br>“Industrial magic, the rounded corners of casing around the hard edges of circuit boards, the apps that claim “anyone” can use them, the “digital natives” who can use them but are not taught what lies beneath. This is mystification: You couldn't possibly understand. This is not for you. But the sacred can mystify, too.”",
+      "link": "https://commonplace.knowledgefutures.org/pub/9lpl0uf1/release/1"
+    },
+    {
+      "title": "Neoliberalism as a political theology of chance",
+      "author": "Joshua Ramey",
+      "reference": "Ramey, Joshua. Neoliberalism as a Political Theology of Chance: The Politics of Divination. 2701273, Social Science Research Network, 1 Dec. 2015.",
+      "thumbnail": "neoliberalism.jpeg",
+      "description": "Ramey's subject of study is the neoliberal market, in which he posits that our unwavering faith in the system (despite its endless implications like social in equality and environmental damage) stems from a “tradition-bound practice of taking chance seriously as a conduit for more-than-human knowledge.<br><br>tl;dr Divination is not that different from the stock market.",
+      "link": "https://doi.org/10.1057/palcomms.2015.39."
+    },
+    {
+      "title": "The Black Box Society",
+      "author": "Frank Pasquale",
+      "reference": "Pasquale, Frank. The Black Box Society: The Secret Algorithms That Control Money and Information. Harvard University Press, 2016.",
+      "thumbnail": "blackbox.jpeg",
+      "description": "Explores the opaque workings of algorithms and corporate secrecy in finance, healthcare, and tech, highlighting how they shape society and threaten accountability.",
+      "link": "https://commonplace.knowledgefutures.org/pub/9lpl0uf1/release/1"
+    },
+    {
+      "title": "Science of the Past, Science of the Forest – Objective Functions: (In)Humanity and Inequity in Artificial Intelligence",
+      "author": "Alan F. Blackwell",
+      "reference": "Lloyd, Geoffrey Ernest Richard, and Aparecida Vilaça. Science of the Forest, Science of the Past. HAU, 2020.",
+      "thumbnail": "science.jpg",
+      "description": "Blackwell discusses objectivity and subjectivity in mathematical functions in computation. Key questions include the relationship between order and information, common sense and classification, what makes a decision human?",
+      "link": "https://www.haujournal.org/index.php/hau/article/view/1342"
+    },
+    {
+      "title": "Speculative Everything: Design, Fiction, and Social Dreaming",
+      "author": "Anthony Dunne and Fiona Raby",
+      "reference": "Dunne, Anthony, and Fiona Raby. Speculative Everything: Design, Fiction, and Social Dreaming. MIT Press, 2013.",
+      "thumbnail": "speculative-everything.jpeg",
+      "description": "My first foray into understanding speculative design. Resource for design as a tool for critical thought, using speculation to challenge norms and imagine alternative futures.",
+      "link": "https://readings.design/PDF/speculative-everything.pdf"
+    },
+    {
+      "title": "Discursive Design: Critical, Speculative, and Alternative Things",
+      "author": "Bruce M. Tharp, Stephanie M. Tharp",
+      "reference": "Tharp, Bruce M., and Stephanie M. Tharp. Discursive Design: Critical, Speculative, and Alternative Things. The MIT Press, 2018.",
+      "thumbnail": "discursive.jpg",
+      "description": "Explores the impact of certain approaches to discourse through design. Offers strategies for leading the project to reflection and discourse. How do we use imagination in design to ask relevant questions?",
+      "link": "https://www.academia.edu/109334779/Discursive_Design_Critical_Speculative_and_Alternative_Things"
+    },
+    {
+      "title": "Designing Culture: The Technological Imagination at Work",
+      "author": "Anne Balsamo",
+      "reference": "Balsamo, Anne. Designing Culture: The Technological Imagination at Work. Duke University Press, 2011.",
+      "thumbnail": "technoculture.jpeg",
+      "description": "Balsamo discusses how innovation in technology affects culture, and vice versa. This book introduced my framework for hermeneutic reverse engineering, in which I analyse cultural elements of divination and technological interactions before reverse engineering them through my experiments.",
+      "link": "https://doi.org/10.1215/9780822392149."
+    },
+    {
+      "title": "Critical Meme Reader I, II and III",
+      "author": "...",
+      "reference": "Arkenbout, Chloë, et al., editors. Critical Meme Reader: Global Mutations of the Viral Image. Institute of Network Cultures, 2021.",
+      "thumbnail": "meme-1.jpeg",
+      "description": "Contributors to this reader combine their global perspectives on meme culture to discuss memetic subjectivities and communities, the work of art in the age of memetic production, the post meme, meme warfare, and meme magic – varying from reflections on real-life experiences to meta meme theory.<br><br>Informed my understanding of memes and their symbolic value in the current age of information for my third experiment (Memesis of an AI Oracle).",
+      "link": "https://www.haujournal.org/index.php/hau/article/view/1342"
+    },
+    {
+      "title": "Computers as Theatre",
+      "author": "Brenda Laurel",
+      "reference": "Laurel, Brenda. Computers as Theatre. Addison-Wesley publ, 1993.",
+      "thumbnail": "theatre.jpg",
+      "description": "Laurel's seminal writings about HCI challenges the limits of interactive experiences. By translating the knowledge of theatre and performance into the design of technological interactions, proposing new opportunities for human  connection and storytelling.<br><br>Her chapter on the characterisation and personification of interactions inspired Merlin the Wizard as the insider character, sharing his knowledge about the Magic in the Machine. ",
+      "link": "https://www.haujournal.org/index.php/hau/article/view/1342"
     }
   ],
   "articles": [
     {
-      "title":"The Return of the Oracle as AI-Black Box",
-      "author":"Robert Simonowski",
-      "reference":"Reference, MLA 2",
-      "thumbnail":"article.jpg",
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!",
-      "link":"https://conditiohumana.io/oracle-ai-black-box/"
+      "title": "The Return of the Oracle as AI-Black Box",
+      "author": "Robert Simonowski",
+      "reference": "Simanowski, Roberto. 'The Return of the Oracle as AI-Black Box'. Conditio Humana - Technology, Ai and Ethics, 27 June 2019.",
+      "thumbnail": "oracle.jpg",
+      "description": "Simanowski explores how modern AI systems, like Alexa and Cortana, function as contemporary oracles—offering decisions and advice without transparent reasoning. This opacity leads to a paradox: while AI aims to optimize our lives, it simultaneously diminishes our autonomy by making choices on our behalf. He draws parallels between ancient oracles, which required human interpretation, and today's AI, which delivers clear directives devoid of context. In this perspective, algorithms are omnipresent and authoritative, subtly reshaping human agency and societal norms.",
+      "link": "https://conditiohumana.io/oracle-ai-black-box/"
+    },{
+      "title": "The Noetic Future of Culture and Brands",
+      "author": "Zach Lamb",
+      "reference": "Lamb, Zach. The Noetic Future of Culture and Brands. 21 Aug. 2023.",
+      "thumbnail": "noetic.jpg",
+      "description": "This article argues that we're moving into a “noetic” era, where knowledge is felt rather than proven—centered on intuition, personal insight, and subjective truth. It highlights a shift in cultural values from scientific rationalism to emotional and spiritual resonance. People are turning to New Age practices like astrology, psychedelics, and mysticism—not as retro regressions, but as frameworks for making sense of an uncertain world.",
+      "link": "https://conceptbureau.com/the-noetic-future-of-culture-and-brands/"
+    },{
+      "title": "Re-enchanted Decision-Making",
+      "author": "Alexi Gunner",
+      "reference": "Gunner, Alexi. 'Idle Gaze 069: Re-Enchanted Decision-Making'. Idle Gaze, 4 Nov. 2024.",
+      "thumbnail": "reenchanted.jpg",
+      "description": "This essay explores the resurgence of divinatory logic in everyday choices. As institutional trust erodes and algorithmic systems become more opaque, people are turning to enchanted tools (like tarot, astrology, and intuition) to reframe decision-making. Rather than seeking clear, rational answers, the process becomes about reflection, symbolic engagement, and emotional resonance.<br><br>Just like the previous one, this article highlights the relevance of spiritual and intuition decision-making.",
+      "link": "https://idlegaze.substack.com/p/idle-gaze-069-re-enchanted-decision"
+    },{
+      "title": "Three Thousand Years of Algorithmic Rituals",
+      "author": "Matteo Pasquinelli",
+      "reference": "Pasquinelli, Matteo. 'Three Thousand Years of Algorithmic Rituals: The Emergence of AI from the Computation of Space - Journal #101'. E-Flux, June 2019.",
+      "thumbnail": "rituals.jpg",
+      "description": "​Matteo Pasquinelli's essay, “Three Thousand Years of Algorithmic Rituals,” traces the origins of algorithms to ancient ritual practices, particularly the Vedic Agnicayana ceremony. In this ritual, practitioners constructed a fire altar in the shape of a falcon using precisely arranged bricks, each placement accompanied by specific chants. This meticulous process exemplifies how early societies embedded algorithmic thinking within spiritual and symbolic frameworks.<br><br>Pasquinelli argues that such rituals represent early forms of algorithmic processes, where the organization of space and time was governed by symbolic and procedural logic. This historical perspective suggests that contemporary AI systems, often viewed as purely technical, have deep roots in human cultural practices that blend computation with meaning-making.​",
+      "link": "https://www.e-flux.com/journal/101/273221/three-thousand-years-of-algorithmic-rituals-the-emergence-of-ai-from-the-computation-of-space/"
     }
   ],
+
   "casestudies": [
     {
-      "title":"Some case study title",
-      "author":"Some Author ",
-      "reference":"Reference, MLA 2",
-      "thumbnail":"case-study.jpg",
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+      "title": "Alamanac.Computer",
+      "author": "Some Author ",
+      "reference": "David Benque",
+      "thumbnail": "cosmic.jpg",
+      "description": "Benque reimagines the almanac, a publication that presented order and regularity to farmers through the cosmos in the 1700s, with modern predictive technology.<br><br>“This project is not about romanticising the occult, or challenging scientific knowledge...it is about keeping a close eye on the cre dentials assigned to predictions, and about questioning which ones are allowed to remake the world in their image.”"
+    },
+    {
+      "title": "BIRD - Bird Informed Remote Divination",
+      "author": "Some Author ",
+      "reference": "Gaston Welisch",
+      "thumbnail": "bird.jpg",
+      "description": "BIRD: Bird Informed Remote Divination by Gaston Welisch is an interactive, web-based artwork exploring the ways AI-driven pattern recognition mirrors and diverges from historical predictive practices, like Roman augury.<br><br>With BIRD, users collaborate with an AI augur to interpret bird patterns in a live webcam feed, answering whatever questions the user might have.<br><br>This work invites users to interrogate how they assign meaning to observed patterns and how these interpretations shape their decisions and behaviours moving forward."
+    },
+    {
+      "title": "Digital Esoterism Or to be a Witch in the Age of Surveillance Capitalism",
+      "author": "Some Author ",
+      "reference": "Ginevra Petrozzi",
+      "thumbnail": "tarot.jpg",
+      "description": "Petrozzi utilises the predictive ads on the client's smartphone to perform a tarot reading. The goal of tarot reading is far from magic, it is a system of chance that allows for reflection and healing.<br><br>“The language and intention of magic, along with the proper ingredients could generate a real change in the relationship with digital tools... When reality can only be imagined through productivity, profit, growth; use magic to resist and forge new languages to describe the world,”"
+    },
+    {
+      "title": "How to Win Trust in Story Weather",
+      "author": "Some Author ",
+      "reference": "Gijs de Boer",
+      "thumbnail": "atm.jpg",
+      "description": "Why do old bank buildings look like temples? Why do we offer our bank card to a dirty machine in an alley at 2am? Why are all fintech apps white with a shade of blue?<br><br>This is a performative talk on how aesthetics build trust. Gijs tries out different trust aesthetics, analyses their attractions and limitations, and explores an alternative way to design trust that tries to avoid fooling people. Trust is a condition for doing economy. Before you buy, save, invest or exchange, you need to trust a product, bank, company or currency. The kind of trust aesthetic that comforts you may reveal something about you.<br><br>This inspired my first foray into experiment 1, where I explored how the semiotics of image, text and the medium affect our belief in decision-making."
     }
   ],
-  "experiments":[
+  
+  "experiments": [
     {
-      "title":"Some Experiment title",
-      "author":"Some Author",
-      "reference":"Reference, MLA 2",
-      "thumbnail":"experiment.jpg",
-      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+      "title": "Electronic Rituals, Oracles and Fortune Telling",
+      "author": "Some Author",
+      "reference": "Allison Parrish",
+      "thumbnail": "electronic.jpeg",
+      "description": "A series of code experiments in NYU ITP to experiment with algorithmic predictions.<br><br>“We belong to a technologized so ciety that thinks itself as truth ful and deterministic...shamans to doctors and scientists, and from gods to algorithms. That narrative ...intends to define our behav ior without total success because by the end of the day humans keep making decision based on magic and superstition.”"
+    }
+  ],
+  "media": [
+    {
+      "title": "Fantasmas",
+      "author": "Julio Torres",
+      "reference": "Julio Torres",
+      "thumbnail": "fantasmas.avif",
+      "description": "Torres' surrealist fantastical six-part tale depicting his loss of a gold oyster earring. In a dreamy, alternate version of New York City; a kaleidoscope of color and surrealism, “Fantasmas“ is a series that weaves together stories of people looking for meaning, purpose and connection in an increasingly isolating world.<br><br>That's inspired some of this project's approach, to find new meaning in parts of the world that might seem scary or unknown."
+    },
+    {
+      "title": "Severance",
+      "author": "Some Author",
+      "reference": "Ben Stiller",
+      "thumbnail": "severance.jpeg",
+      "description": "A series about office workers who have undergone a procedure to sever their memories, dividing their work and personal lives. The show explores themes of identity, memory, and the consequences of technology on human experience.<br><br>I enjoyed the show's cult-like portrayal of corporations in a kinda absurd but terrifying way."
+    },
+    {
+      "title": "Spotify Playlist:<br>curated by a tech wizard facing an existential crisis",
+      "author": "Some Author",
+      "reference": "me",
+      "thumbnail": "wizard.jpg",
+      "description": "A playlist of music I've been listening to over the course of creating this story.",
+      "link": "https://open.spotify.com/playlist/5lDFp3z8G3AzMvSMG39Lzn?si=b11a7dd5f18d421c"
     }
   ]
 }

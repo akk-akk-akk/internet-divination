@@ -114,7 +114,7 @@ function generateRepoItemsFrom(theData) {
       const r0 = `${el.title}`;
       const r1 = `${el.reference}`;
       const r2 = `${link}`;
-      const reference = `<li><p>${r0}<br>${r1}${r2}</p></li>`;
+      const reference = `<li><u><p>${r0}</u><br><br>${r1}<br>${r2}</p></li>`;
       const description = `<li><p>${el.description}</p></li>`;
       const pop = `</li></ul></ul>`;
       result += `${push}${thumbnail}${reference}${description}${pop}`;
@@ -183,5 +183,52 @@ document.addEventListener('DOMContentLoaded', () => {
       hoverImage.style.left = `${e.pageX + 15}px`; // Offset slightly to the right of the cursor
       hoverImage.style.top = `${e.pageY + 15}px`; // Offset slightly below the cursor
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const links = document.querySelectorAll(".footer-link");
+
+  function highlightCurrentSection() {
+    let currentSection = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        currentSection = section.id;
+      }
+    });
+
+    links.forEach((link) => {
+      if (link.getAttribute("href").substring(1) === currentSection) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", highlightCurrentSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.createElement("img");
+  lightbox.appendChild(lightboxImg);
+
+  // Add click event to all images
+  document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src; // Set the clicked image as the lightbox image
+      lightbox.classList.add("show"); // Show the lightbox
+    });
+  });
+
+  // Close the lightbox when clicking outside the image
+  lightbox.addEventListener("click", (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.classList.remove("show"); // Hide the lightbox
+    }
   });
 });

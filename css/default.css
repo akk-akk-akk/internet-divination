@@ -328,6 +328,15 @@
     padding-right: var(--spacing-m);
   }
 
+
+.padding__l {
+  padding: var(--spacing-m);
+}
+
+.padding__y-xl {
+  padding: var(--spacing-l); 
+}
+
 }
 
 
@@ -438,7 +447,7 @@
 
 .color__bg-dashed {
   /* background: rgb(241, 241, 241);; */
-  border: 2px dashed var(--color-11);
+  border: 2px dashed var(--color-0);
 }
 
 .font__size-xs {
