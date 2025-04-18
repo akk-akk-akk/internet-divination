@@ -327,16 +327,6 @@
     padding-left: var(--spacing-m);
     padding-right: var(--spacing-m);
   }
-
-
-.padding__l {
-  padding: var(--spacing-m);
-}
-
-.padding__y-xl {
-  padding: var(--spacing-l); 
-}
-
 }
 
 
