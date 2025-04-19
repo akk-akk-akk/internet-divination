@@ -318,9 +318,20 @@ footer {
   gap: var(--spacing-xs);
 }
 
+.row.small-gap {
+  gap: var(--spacing-xs) !important;
+}
+
 
 .catalogue-page .row {
   gap: var(--spacing-xl); /* Adjust the gap size as needed */
+}
+
+.catalogue-page h3 {
+font-family: 'myfont', san-serif;
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .catalogue-page p {
@@ -332,6 +343,11 @@ font-family: 'ABC Diatype Mono', monospace;
 .catalogue-page figcaption p {
   font-size: var(--font-size-xs) !important; /* Force the smaller size */
 }
+
+.catalogue-page a {
+  font-size: var(--font-size-s);
+    font-weight: 600;
+  }
 
 
 @media (orientation: portrait) {
@@ -348,7 +364,6 @@ font-family: 'ABC Diatype Mono', monospace;
   display: flex;
   flex-direction: column;
   flex: 1;
-
 }
 
 .column h1 {
@@ -367,6 +382,8 @@ font-family: 'ABC Diatype Mono', monospace;
   flex-basis: 100%;
   flex: 2;
 }
+
+
 
 .type__content {
   margin-left: var(--spacing-l);
@@ -629,24 +646,18 @@ li {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /* border: 1px solid var(--color-2); */
-  /* border-radius: 100vh; */
-  background: #ffffff;
-  /* background: var(--color-11) */
-  
-  /* background: linear-gradient(rgb(255, 0, 0, 0.5), rgb(255, 255, 255,0),rgb(255, 0, 0, 0.5)); */
+  background: transparent;
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(rgb(255, 255, 255,0), var(--color-4), rgb(255, 255, 255,0));
-  /* background: linear-gradient(rgb(255, 0, 0), rgb(255, 255, 255,0),rgb(255, 0, 0)); */
-  /* border-radius: 100vh; */
 }
 
 /* **********************************************************
@@ -656,8 +667,9 @@ li {
 
 .pdf-viewer {
   width: 100%;
+  height: auto;
   border: 1px solid #ccc; /* Optional: Add a border */
-  margin: 1rem 0; /* Optional: Add spacing */
+  margin: 0; /* Optional: Add spacing */
 }
 
 
@@ -769,7 +781,7 @@ li {
 
 .floating-footer nav ul li a {
   text-decoration: none;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   color: var(--color-11);
   transition: color 0.3s, text-shadow 0.3s;
 }
@@ -784,12 +796,15 @@ li {
 .carousel {
   position: relative;
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px solid var(--color-0); /* Optional: Add a border */
   border-radius: 5px; /* Optional: Add rounded corners */
+
 }
 
 /* Carousel track */
@@ -797,15 +812,28 @@ li {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
+  height: 100%;
 }
 
 /* Carousel items */
 .carousel-item {
   min-width: 100%;
-  height: auto;
+  height: 100%;
   padding: 10px;
   box-sizing: border-box;
-  text-align: left;  
+  text-align: left; 
+  justify-content: center;
+  align-items: center;
+
+}
+.carousel-item  img{
+  .carousel-item img {
+    max-width: 100%; /* Ensure the image does not exceed the width of the container */
+    max-height: 100%; /* Ensure the image does not exceed the height of the container */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+    display: block; /* Remove any inline spacing issues */
+  }
+
 }
 
 /* Carousel buttons */
@@ -829,6 +857,7 @@ li {
   font-weight: bold;
   
 }
+
 
 
 .carousel-button.left {

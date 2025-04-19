@@ -327,6 +327,10 @@
     padding-left: var(--spacing-m);
     padding-right: var(--spacing-m);
   }
+
+  .padding__top-xl {
+    padding-top: var(--spacing-l);
+  }
 }
 
 
@@ -336,7 +340,8 @@
  * ********************************************************** */
 
 .color__bg-0 {
-  background: var(--color-0) !important;
+  background: var(--color-0); 
+  border-radius: 5px;
 }
 
 .color__bg-1 {
@@ -438,6 +443,7 @@
 .color__bg-dashed {
   /* background: rgb(241, 241, 241);; */
   border: 2px dashed var(--color-0);
+  border-radius: 5px;
 }
 
 .font__size-xs {
@@ -498,4 +504,18 @@
 
 .font__weight-900 {
   font-weight: 900;
+}
+
+
+
+@media (orientation: portrait) {
+
+
+  .color__bg-dashed {
+    /* background: rgb(241, 241, 241);; */
+    border-left: 0;
+    border-right: 0;
+    border-top: 2px dashed var(--color-0);
+    border-bottom: 2px dashed var(--color-0);
+  }
 }
