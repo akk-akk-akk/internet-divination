@@ -789,7 +789,7 @@ li {
   display: flex;
   align-items: center;
   border: 1px solid var(--color-0); /* Optional: Add a border */
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 /* Carousel track */
@@ -816,7 +816,7 @@ li {
   background-color: white; /* White background */
   color: rgb(227, 227, 227); /* Grey arrow */
   border: 1px solid black; /* Black border */
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
   z-index: 100;
   border-radius: 50%; /* Circular shape */
@@ -832,11 +832,11 @@ li {
 
 
 .carousel-button.left {
-  left: 10px;
+  left: 15px;
 }
 
 .carousel-button.right {
-  right: 10px;
+  right: 15px;
 }
 
 .carousel-button:hover {
