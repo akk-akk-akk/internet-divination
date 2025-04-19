@@ -232,3 +232,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all carousels on the page
+  const carousels = document.querySelectorAll(".carousel");
+
+  carousels.forEach((carousel) => {
+    const track = carousel.querySelector(".carousel-track");
+    const items = carousel.querySelectorAll(".carousel-item");
+    const leftButton = carousel.querySelector(".carousel-button.left");
+    const rightButton = carousel.querySelector(".carousel-button.right");
+    let currentIndex = 0;
+
+    // Function to move the carousel
+    function moveCarousel(direction) {
+      const totalItems = items.length;
+
+      // Update the current index
+      currentIndex = (currentIndex + direction + totalItems) % totalItems;
+
+      // Move the carousel
+      const offset = -currentIndex * 100; // Each item is 100% width
+      track.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Add event listeners for the buttons
+    leftButton.addEventListener("click", () => moveCarousel(-1));
+    rightButton.addEventListener("click", () => moveCarousel(1));
+
+    
+    
+  });
+});

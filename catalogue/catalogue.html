@@ -44,16 +44,20 @@
     <main>
         <article>
             <section>
+
+
                 <div style="height:100vh; position: relative;
 " class="width__l margin__auto padding__top-m color__fg-4">
                     <div style=" position: absolute;
                 top: 45%;
-                transform: translateY(-50%);" class="row type__content center__type">
-                        <h1 style="font-size: var( --font-size-xxl); ">Catalogue of Making</h1>
-                        <br><br>
-                        <h1>
-                            This series of experiments and prototypes explores different ways to experiment with the
-                            intersection of magic and the machine.</h1>
+                transform: translateY(-50%);" class="row type__content">
+                        <div class="column center__type">
+                            <h1 style="font-size: var(--font-size-xxl); ">Catalogue of Making</h1>
+                            <br><br>
+                            <h1>
+                                This series of experiments and prototypes explores different ways to experiment with the
+                                intersection of magic and the machine.</h1>
+                        </div>
                     </div>
                 </div>
 
@@ -109,7 +113,7 @@
                 <div class="width__m margin__auto padding__y-xl">
                     <div class="row type__content">
                         <div class="column">
-                            <h2>Experiment 1:</h2><br>
+                            <h2>Prototype 1:</h2><br>
                             <h1>Jiao Bei 2.0</h1>
                             <!-- <p>This first prototype is a study of materiality in divination, through the design of a
                                 digital simulation of the jiǎo bēi, a divinatory tool commonly used in Chinese
@@ -154,15 +158,37 @@
                     </div>
 
                     <div class="row margin__auto color__bg-dashed type__content padding__m">
-                        <div class="row small-gap center__type">
-                            <div>
-                                <p>Learnings from 1st iteration</p>
+                        <div style="margin-bottom: var(--spacing-xs)" class="row small-gap center__type">
+                            <div class="carousel">
+                                <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        <div class="video">
+                                            <img src="../assets/images/catalogue/jiaobei-chart.jpg">
+                                            <figcaption>
+                                                <p>1. Materiality Observed</p>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="video">
+                                            <img src="../assets/images/catalogue/jiaobei-chart-2.jpg">
+                                            <figcaption>
+                                                <p>2. Mapping Elements of Significance</p>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+                            </div>
+                            <!-- <div>
+                                <h2>Materiality Observed</h2>
                                 <img src="../assets/images/catalogue/jiaobei-chart.jpg" alt="Jiao Bei">
 
-                            </div>
+                            </div> -->
                         </div>
                         <div class="column">
-                            <img style="padding: 10px;" src="../assets/images/catalogue/jiaobei-gif.gif" alt="Jiao Bei">
+                            <img style="max-width:150px;padding: 10px;" src="../assets/images/catalogue/jiaobei-gif.gif" class="img__stroke" alt="Jiao Bei">
                         </div>
                         <div class="column">
                             <p>Consider why each of these help make decisions differently. If I were to present the
@@ -196,7 +222,49 @@
                             </p>
                         </div>
                         <div class="column__double">
-                            <div class="video">
+                            <div class="carousel">
+                                <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        <div class="video">
+                                            <video class="lazy" autoplay muted playsinline loop controls preload="none"
+                                                width="100%" src="../assets/images/catalogue/jiaobei-vid-image.mp4"
+                                                type="video/mp4">
+                                            </video>
+                                            <figcaption>
+                                                <p>(Image) Jiaobei → 1/0 </p>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="video">
+                                            <video class="lazy" autoplay muted playsinline loop controls preload="none"
+                                                width="100%" src="../assets/images/catalogue/jiaobei-vid-language.mp4"
+                                                type="video/mp4">
+                                            </video>
+                                            <figcaption>
+                                                <p>(Language) Divine → Secular</p>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="video">
+                                            <video class="lazy" autoplay muted playsinline loop controls preload="none"
+                                                width="100%"
+                                                src="../assets/images/catalogue/jiaobei-vid-probability.mp4"
+                                                type="video/mp4">
+                                            </video>
+                                            <figcaption>
+                                                <p>(Probability) 0 → 100</p>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+                            </div>
+
+                            <!-- <div class="video">
                                 <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
                                     width="100%" poster="">
                                     <source data-src="../assets/images/catalogue/jiaobei-vid-image.mp4"
@@ -205,7 +273,7 @@
                                 <figcaption>
                                     <p>(Image) Jiaobei → 1/0 </p>
                                 </figcaption>
-                            </div>
+                            </div> -->
                         </div>
 
                         <!-- <div class="column">
@@ -257,13 +325,13 @@
                 <div class="width__l margin__auto padding__y-xl">
                     <div class="row type__content">
                         <div class="column">
-                            <h2>Experiment 2:</h2><br>
+                            <h2>Prototype 2:</h2><br>
                             <h1>Noise Oracle</h1>
                             <p>I next attempted to create a brand new divinatory process removed from existing cultural
                                 elements. Instead, the goal is to derive these elements purely from computational
                                 methods. This experiment therefore instrumentalises computer-generated imagery and
                                 machine
-                                learning for their ability to generate randomness.
+                                learning for their ability to generate randomness.</p>
                             <div style="gap:10px" class="row">
                                 <img style="max-width: 75px; max-height:75px;" src="../assets/images/catalogue/sky.jpeg"
                                     alt="Noise Oracle">
@@ -273,10 +341,10 @@
                                     src="../assets/images/catalogue/water.jpg" alt="Noise Oracle">
                             </div>
                             <br><br>
-                            In other words, if our
-                            ancestors were given current technology, how would they have used it for meaning-making
-                            like they did the stars?
-                            <!-- <br><br>
+                            <p>In other words, if our
+                                ancestors were given current technology, how would they have used it for meaning-making
+                                like they did the stars?
+                                <!-- <br><br>
                                 If the devil is in the details, only this oracle could find the devil in the noise. -->
                             </p>
                         </div>
@@ -420,47 +488,149 @@
             <section class="color__bg-0 color__fg-1 catalogue-page">
                 <div class="width__l margin__auto padding__top-l">
                     <div class="column">
-                        <p class="center__type"><a href="https://magicinthemachine-experiment-1.netlify.app/"
+                        <p class="center__type"><a href="https://magicinthemachine-experiment-2.netlify.app/"
                                 target="_blank">Final Interactive Site<br>Click to Visit</a></p>
                     </div>
                 </div>
-                <section class="color__bg-0 color__fg-1 catalogue-page">
-                    <div class="width__l margin__auto padding__y-l">
-                        <div style="margin-bottom: var(--spacing-xs)"  class="row type__content">
-                            <div class="column">
-                                <div class="video">
-                                    <video class="lazy vid__stroke" autoplay muted playsinline loop controls
-                                        preload="none" width="100%" poster="">
-                                        <source data-src="../assets/images/catalogue/noise-final-3.mp4"
-                                            type="video/mp4" />
-                                    </video>
-                                </div>
 
+                <div class="width__l margin__auto padding__y-l">
+                    <div style="margin-bottom: var(--spacing-s)" class="row type__content">
+                        <div class="column">
+                            <div class="video">
+                                <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
+                                    width="100%" poster="">
+                                    <source data-src="../assets/images/catalogue/noise-final-3.mp4" type="video/mp4" />
+                                </video>
+                                <figcaption>
+                                    <p>Consulting a Family Plant</p>
+                                </figcaption>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row small-gap type__content">
+                        <div class="column">
+                            <div class="video">
+                                <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
+                                    width="100%" poster="">
+                                    <source data-src="../assets/images/catalogue/noise-final-2.mp4" type="video/mp4" />
+                                </video>
+                                <figcaption>
+                                    <p>Consulting myself</p>
+                                </figcaption>
                             </div>
                         </div>
-                        <div class="row small-gap type__content">
-                            <div class="column">
-                                <div class="video">
-                                    <video class="lazy vid__stroke" autoplay muted playsinline loop controls
-                                        preload="none" width="100%" poster="">
-                                        <source data-src="../assets/images/catalogue/noise-final-2.mp4"
-                                            type="video/mp4" />
-                                    </video>
-                                </div>
+                        <div class="column">
+                            <div class="video">
+                                <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
+                                    width="100%" poster="">
+                                    <source data-src="../assets/images/catalogue/noise-final-1.mp4" type="video/mp4" />
+                                </video>
+                                <figcaption>
+                                    <p>Consulting a very agreeable soft toy</p>
+                                </figcaption>
                             </div>
-                            <div class="column">
-                                <div class="video">
-                                    <video class="lazy vid__stroke" autoplay muted playsinline loop controls
-                                        preload="none" width="100%" poster="">
-                                        <source data-src="../assets/images/catalogue/noise-final-1.mp4"
-                                            type="video/mp4" />
-                                    </video>
-                                </div>
-                                <!-- <div class="column"></div> -->
+                            <!-- <div class="column"></div> -->
 
-                            </div>
                         </div>
-                </section>
+                    </div>
+                </div>
+            </section>
+            <section class="catalogue-page" id="manifest">
+                <div class="width__l margin__auto padding__y-xl">
+                    <div class="row type__content">
+                        <div class="column">
+                            <h2>Prototype 3</h2><br>
+                            <h1>Extension for Manifestation</h1>
+                            <p>This chrome extension explores
+                                the power of digital rituals for
+                                self-improvement.
+                                Built to reside in the background
+                                of the browser, the space will be
+                                accessed every time the user opens a
+                                new browser.
+                                Every time a related search to the
+                                item is made, a notification pops
+                                up, serving as a reminder and affir
+                                mation of the manifestation.</p>
+                        </div>
+                        <div class="column__double">
+                            <div class="video">
+                                <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
+                                    width="100%" poster="">
+                                    <source data-src="../assets/images/catalogue/candle-stock.mp4" type="video/mp4" />
+                                </video>
+                                <figcaption>
+                                    <p>Lighting a candle for a wish</p>
+                                </figcaption>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="width__xs color__bg-dashed margin__auto padding__m margin__y-xl">
+                        <div class="column type__content">
+                            <img class="img__stroke" src="../assets/images/catalogue/manifest-1.jpg">
+                            <figcaption>
+                                <p><a href="https://www.dazeddigital.com/life-culture/article/64823/1/the-rise-of-the-manifinsta-how-the-internet-became-a-manifestation-tool" target="_blank">Link to Dazed Article</a></p>
+                            </figcaption>
+                            <br>
+             
+                            <p>This extension was a response to the Manifinsta, which I believe could be viewed as a modern
+                                "superstition" in which we get back what we put out into the universe (in this case, on
+                                the internet). However, the article warns of the risks of data insecurity through this method.<br><br>
+
+                                This begs the question, is there a way we can create a self-contained manifestation portal that doesn't rely on the internet?</p>
+                        </div>
+                    </div>
+                    <div class="row type__content">
+                        <div class="carousel">
+                            <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+                            <div class="carousel-track">
+                                <div class="carousel-item">
+                                    <div class="video">
+                                        <img src="../assets/images/catalogue/manifest-3.jpg">
+                                        <figcaption>
+                                            <p>1. Chrome Extension & Pop-up Reminder</p>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="video">
+                                        <img src="../assets/images/catalogue/manifest-2.jpg">
+                                        <figcaption>
+                                            <p>2. Prompt</p>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="video">
+                                        <img src="../assets/images/catalogue/manifest-4.jpg">
+                                        <figcaption>
+                                            <p>3. Some wishes I made</p>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+                        </div>
+                        <div class="column">
+                            <div class="video">
+                                <video class="lazy vid__stroke" autoplay muted playsinline loop controls preload="none"
+                                    width="100%" poster="">
+                                    <source data-src="../assets/images/catalogue/manifest-vid.mp4" type="video/mp4" />
+                                </video>
+                                <figcaption>
+                                    <p>Every time you look for something, the extension speaks your wish into existence again.</p>
+                                </figcaption>
+                            </div>
+
+                        </div>
+
+                </div>
+                </div>
+
+            </section>
 
 
 

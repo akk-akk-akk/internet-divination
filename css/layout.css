@@ -780,3 +780,66 @@ li {
 }
 
 
+/* Carousel container */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-0); /* Optional: Add a border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Carousel track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Carousel items */
+.carousel-item {
+  min-width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;  
+}
+
+/* Carousel buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white; /* White background */
+  color: rgb(227, 227, 227); /* Grey arrow */
+  border: 1px solid black; /* Black border */
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Fixed width for the button */
+  height: 40px; /* Fixed height for the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Adjust arrow size */
+  font-weight: bold;
+  
+}
+
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+  color: black; /* Darker arrow on hover */
+}
