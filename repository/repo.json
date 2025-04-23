@@ -126,6 +126,14 @@
       "thumbnail": "rituals.jpg",
       "description": "​Matteo Pasquinelli's essay, “Three Thousand Years of Algorithmic Rituals,” traces the origins of algorithms to ancient ritual practices, particularly the Vedic Agnicayana ceremony. In this ritual, practitioners constructed a fire altar in the shape of a falcon using precisely arranged bricks, each placement accompanied by specific chants. This meticulous process exemplifies how early societies embedded algorithmic thinking within spiritual and symbolic frameworks.<br><br>Pasquinelli argues that such rituals represent early forms of algorithmic processes, where the organization of space and time was governed by symbolic and procedural logic. This historical perspective suggests that contemporary AI systems, often viewed as purely technical, have deep roots in human cultural practices that blend computation with meaning-making.​",
       "link": "https://www.e-flux.com/journal/101/273221/three-thousand-years-of-algorithmic-rituals-the-emergence-of-ai-from-the-computation-of-space/"
+    },
+    {
+      "title": "The Good, the Bad, and the Ugly: What AI Chatbots Give Us, and What They Take Away",
+      "author": "OpenAI",
+      "reference": "‘The Good, the Bad, and the Ugly: What AI Chatbots Give Us, and What They Take Away - ChatGPT / Use Cases and Examples’. OpenAI Developer Community, 17 Apr. 2025, https://community.openai.com/t/the-good-the-bad-and-the-ugly-what-ai-chatbots-give-us-and-what-they-take-away/1230365.",
+      "thumbnail": "chatbots.jpg",
+      "description": "The sentiment of this essay inspired my third prototype, Memesis of an AI Oracle.​ I consider the chatbots have learnt to mirror us, similarly to tarot cards and readers. Keenly aware of symbolic imagery or language, they can reach into parts of our hearts and minds that even we don't realise or understand.",
+      "link": "https://community.openai.com/t/the-good-the-bad-and-the-ugly-what-ai-chatbots-give-us-and-what-they-take-away/1230365"
     }
   ],
 
@@ -196,7 +204,7 @@
       "author": "Some Author",
       "reference": "me",
       "thumbnail": "wizard.jpg",
-      "description": "A playlist of music I've been listening to over the course of creating this story.",
+      "description": "A playlist of music I've been listening to over the course of creating this story. Lyrically or sonically, the songs reflect on the complexities of existing in age of modern technology — the joys, alienation and absurdity.",
       "link": "https://open.spotify.com/playlist/5lDFp3z8G3AzMvSMG39Lzn?si=b11a7dd5f18d421c"
     }
   ]
